@@ -97,7 +97,7 @@ alias ip="ip -c"
 alias l="exa -lhgb --git --color-scale" # list, header, group, binary, all, git, color for size
 alias ll="exa -lhgba --git --color-scale"
 alias viless="/usr/share/vim/vim81/macros/less.sh"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 
