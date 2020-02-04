@@ -1,0 +1,11 @@
+[Unit]
+Description=Run nextcloud sync 15min after boot and every day
+
+[Timer]
+OnBootSec=15min
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
