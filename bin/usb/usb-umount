@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Connected storage devices:"
+
+lsblk | egrep -v 'nvme0n1'
+
+echo
+echo "Which partition should get unmounted?"
+
+read partition
+
+pumount $partition

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo SSID:
+read SSID
+
+echo "Password:"
+read -s PW
+nmcli device wifi connect $SSID password $PW
