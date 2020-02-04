@@ -6,7 +6,7 @@ These are my dotfiles. I'm nothing without my dotfiles.
 
 The branch for my private laptop.
 
-# Screenshots
+# Screenshots for private laptop
 
 ## Empty Workspace
 
