@@ -69,7 +69,7 @@ bindsym $mod+m workspace $ws_Mail
 bindsym $mod+c workspace $ws_Com
 
 # move focused container to workspace
-bindsym $mod+Mod1+0 move container to workspace $ws_cli; workspace $ws_cli
+bindsym $mod+Shift+0 move container to workspace $ws_cli; workspace $ws_cli
 bindsym $mod+Shift+1 move container to workspace $ws_1; workspace $ws_1
 bindsym $mod+Shift+2 move container to workspace $ws_2; workspace $ws_2
 bindsym $mod+Shift+3 move container to workspace $ws_3; workspace $ws_3
@@ -102,6 +102,7 @@ assign [class="VirtualBox Machine"] $ws_8
 
 # move workspace between outputs
 bindsym $mod+p move workspace to output right
+bindsym $mod+Shift+p move workspace to output up
 bindsym $mod+n move workspace to output left
 
 # Use Mouse+$mod to drag floating windows to their wanted position
