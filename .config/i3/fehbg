@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-center "$HOME/.config/i3/bg.png" 
+feh --bg-scale "$HOME/.config/i3/desktop_background.png" 
