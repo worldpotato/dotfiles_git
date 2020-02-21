@@ -1,167 +1,162 @@
-"==== Vundle Start ====
-set nocompatible              " be iMproved, required
-filetype off                  " required
+""==== Vundle Start ====
+    set nocompatible              " be iMproved, required
+    filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/repos/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/repos/Vundle.vim
+    call vundle#begin()
+    " alternatively, pass a path where Vundle should install plugins
+    "call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree' " nerdtree on the right
-Plugin 'Xuyuanp/nerdtree-git-plugin' " shows git status in nerdtree
-Plugin 'scrooloose/nerdcommenter' " simple commenting
-Plugin 'airblade/vim-gitgutter' " shows the left column with git changes
-Plugin 'tpope/vim-fugitive' " git commands inside vim
-Plugin 'lervag/vimtex'
-Plugin 'skanehira/preview-markdown.vim' " add preview for markdown
-Plugin 'lazywei/vim-matlab' " add matlab syntax
-Plugin 'francoiscabrol/ranger.vim' " adds ranger inside vim
-Plugin 'junegunn/fzf.vim' " fuzzy search for everything
-Plugin 'vim-airline/vim-airline' " better statusbar
-Plugin 'vim-airline/vim-airline-themes' " beatuiful airline
-Plugin 'ryanoasis/vim-devicons' " icons in nerdtree and statusbar
+    " let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'scrooloose/syntastic'
+    Plugin 'scrooloose/nerdtree' " nerdtree on the right
+    Plugin 'Xuyuanp/nerdtree-git-plugin' " shows git status in nerdtree
+    Plugin 'scrooloose/nerdcommenter' " simple commenting
+    Plugin 'airblade/vim-gitgutter' " shows the left column with git changes
+    Plugin 'tpope/vim-fugitive' " git commands inside vim
+    Plugin 'lervag/vimtex'
+    Plugin 'skanehira/preview-markdown.vim' " add preview for markdown
+    Plugin 'lazywei/vim-matlab' " add matlab syntax
+    Plugin 'francoiscabrol/ranger.vim' " adds ranger inside vim
+    Plugin 'junegunn/fzf.vim' " fuzzy search for everything
+    Plugin 'vim-airline/vim-airline' " better statusbar
+    Plugin 'vim-airline/vim-airline-themes' " beatuiful airline
+    Plugin 'ryanoasis/vim-devicons' " icons in nerdtree and statusbar
 
-" TODO: Learn the following plugins
-" Plugin 'tpope/vim-surround'
+    " TODO: Learn the following plugins
+    " Plugin 'tpope/vim-surround'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
+    " The following are examples of different formats supported.
+    " Keep Plugin commands between vundle#begin/end.
+    " plugin on GitHub repo
+    "Plugin 'tpope/vim-fugitive'
+    " plugin from http://vim-scripts.org/vim/scripts.html
+    " Plugin 'L9'
+    " Git plugin not hosted on GitHub
+    "Plugin 'git://git.wincent.com/command-t.git'
+    " git repos on your local machine (i.e. when working on your own plugin)
+    "Plugin 'file:///home/gmarik/path/to/plugin'
+    " The sparkup vim script is in a subdirectory of this repo called vim.
+    " Pass the path to set the runtimepath properly.
+    "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+    " Install L9 and avoid a Naming conflict if you've already installed a
+    " different version somewhere else.
+    " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+    " All of your Plugins must be added before the following line
+    call vundle#end()            " required
 
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line" create numbers at the left side
+    filetype plugin indent on    " required
+    " To ignore plugin indent changes, instead use:
+    "filetype plugin on
+    "
+    " Brief help
+    " :PluginList       - lists configured plugins
+    " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+    " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+    " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+    "
+    " see :h vundle for more details or wiki for FAQ
+    " Put your non-Plugin stuff after this line" create numbers at the left side
+""==== Vundle End ====
 
+"==== Airline Start ====
+    " Always show the status line
+    set laststatus=2
+    let g:airline_powerline_fonts = 1
+    let g:airline_theme='airpotato'
 
-" ==== Vundle End ====
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
 
-" ==== Airline Start ====
-" Always show the status line
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline_theme='airpotato'
+    " unicode symbols
+    let g:airline_left_sep = '»'
+    let g:airline_left_sep = '▶'
+    let g:airline_right_sep = '«'
+    let g:airline_right_sep = '◀'
+    let g:airline_symbols.crypt = '🔒'
+    let g:airline_symbols.linenr = '☰'
+    let g:airline_symbols.linenr = '␊'
+    let g:airline_symbols.linenr = '␤'
+    let g:airline_symbols.linenr = '¶'
+    let g:airline_symbols.maxlinenr = ''
+    let g:airline_symbols.maxlinenr = ' '
+    let g:airline_symbols.branch = '⎇'
+    let g:airline_symbols.paste = 'ρ'
+    let g:airline_symbols.paste = 'Þ'
+    let g:airline_symbols.paste = '∥'
+    let g:airline_symbols.spell = 'Ꞩ'
+    let g:airline_symbols.notexists = 'Ɇ'
+    let g:airline_symbols.whitespace = 'Ξ'
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+    " airline symbols
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = ''
+    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.linenr = '☰'
+    let g:airline_symbols.maxlinenr = ' '
+    let g:airline_symbols.dirty='⚡'
 
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.maxlinenr = ' '
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.spell = 'Ꞩ'
-let g:airline_symbols.notexists = 'Ɇ'
-let g:airline_symbols.whitespace = 'Ξ'
+    " Tab bar at the top
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#left_sep = ' '
+    let g:airline#extensions#tabline#left_alt_sep = '|'
+"==== Airline end ====
 
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = ' '
-let g:airline_symbols.dirty='⚡'
+"==== NerdTree Start ====
+    " close NERDTree if the only window left open is a Nerdtree
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Tab bar at the top
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-" ==== Airline end ====
+    " NERDTree automatic launch
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" ==== NerdTree Start ====
-" close NERDTree if the only window left open is a Nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    " autostart NERDTree
+    autocmd VimEnter * NERDTree | wincmd p
 
-" NERDTree automatic launch
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    " NERDTree ignore array
+    let NERDTreeIgnore = ['\.aux$']
+"==== NerdTree End ====
 
-" autostart NERDTree
-autocmd VimEnter * NERDTree | wincmd p
+"==== nerdcommenter Start ====
+    " Add spaces after comment delimiters by default
+    let g:NERDSpaceDelims = 1
 
-" NERDTree ignore array
-let NERDTreeIgnore = ['\.aux$']
+    " Use compact syntax for prettified multi-line comments
+    let g:NERDCompactSexyComs = 1
 
-" ==== NerdTree End ====
+    " Align line-wise comment delimiters flush left instead of following code indentation
+    let g:NERDDefaultAlign = 'left'
 
-" ==== nerdcommenter Start ====
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
+    " Set a language to use its alternate delimiters by default
+    let g:NERDAltDelims_java = 1
 
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
+    " Add your own custom formats or override the defaults
+    let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
+    " Allow commenting and inverting empty lines (useful when commenting a region)
+    let g:NERDCommentEmptyLines = 1
 
-" Set a language to use its alternate delimiters by default
-let g:NERDAltDelims_java = 1
+    " Enable trimming of trailing whitespace when uncommenting
+    let g:NERDTrimTrailingWhitespace = 1
 
-" Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" Enable NERDCommenterToggle to check all selected lines is commented or not
-let g:NERDToggleCheckAllLines = 1
-
-" ==== nerdcommenter End ====
+    " Enable NERDCommenterToggle to check all selected lines is commented or not
+    let g:NERDToggleCheckAllLines = 1
+"==== nerdcommenter End ====
 
 "==== vimtex start ====
-" vimtex
-let g:vimtex_compiler_method='arara'
-let g:vimtex_mappings_enabled = 1
-let g:vimtex_view_method='zathura'
-let g:vimtex_compiler_arara = 1
-
-" ==== vimtex end ====
+    " vimtex
+    let g:vimtex_compiler_method='arara'
+    let g:vimtex_mappings_enabled = 1
+    let g:vimtex_view_method='zathura'
+    let g:vimtex_compiler_arara = 1
+"==== vimtex end ====
 
 " numbers changeing behavior with mode
 set number relativenumber
@@ -230,3 +225,4 @@ let g:preview_markdown_vertical = 1
 " colorscheme
 colorscheme worldpotato
 
+set foldmethod=indent
