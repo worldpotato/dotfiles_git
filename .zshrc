@@ -9,7 +9,7 @@ ZSH_THEME="worldpotato"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ros git httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf gpg-agent rsync)
+plugins=(git httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf gpg-agent rsync)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,7 +42,6 @@ export PATH="$PATH:/home/worldpotato/go/bin"
 # syntax highlighting
 source ~/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
-source /opt/ros/melodic/setup.zsh
 
 # added by travis gem
 [ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh
