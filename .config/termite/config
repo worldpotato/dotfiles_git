@@ -7,7 +7,6 @@ cell_width_scale = 1.0
 clickable_url = true
 #dynamic_title = true
 
-font = Cozette 11
 font = JetBrains Mono 11
 
 #font = Monospace 9
