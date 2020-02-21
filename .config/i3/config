@@ -2,171 +2,172 @@
 
 set $mod Mod4
 
-font JetBrains Mono, Symbola
+font JetBrains Mono
 
 # ================== Variables =================
 
-# workspace name-variables
-set $ws_cli zsh
-set $ws_1 1 ide
-set $ws_2 2 pdf
-set $ws_3 3 tex
-set $ws_4 4 Spotify
-set $ws_5 5
-set $ws_6 6
-set $ws_7 7
-set $ws_8 8 VM
-set $ws_9 9 priv
-set $ws_music music
-set $ws_Browser Browser
-set $ws_Mail Mail
-set $ws_Com Com
+    # workspace name-variables
+    set $ws_document Document
+    set $ws_music music
+    set $ws_Browser Browser
+    set $ws_Mail Mail
+    set $ws_cli >_
+    set $ws_code Code
+    set $ws_1 1
+    set $ws_2 2
+    set $ws_3 3
+    set $ws_4 4
+    set $ws_5 5
+    set $ws_6 6
+    set $ws_7 7
+    set $ws_8 8
+    set $ws_9 9 priv
 
-# application
-set $dmenu dmenu_run -dim 0.6 -dc Black -h 20 -fn "Source Code Pro:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
-set $logoutBar "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-set $polybar $HOME/.config/polybar/launch.sh
-set $lockScreen "loginctl lock-session"
+    # application
+    set $dmenu dmenu_run -dim 0.6 -dc Black -h 20 -fn "JetBrains Mono:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
+    set $logoutBar "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+    set $polybar $HOME/.config/polybar/launch.sh
+    set $lockScreen "loginctl lock-session"
 
-# Colors
-## Normal
+    # Colors
+    ## Normal
 
-set $black #022222
-set $red #aa0000
-set $green #5A9A00
-set $yellow #a68904
-set $blue #267D95
-set $magenta #9010cc
-set $cyan #0c605e
-set $white #b0b0b0
+    set $black #022222
+    set $red #aa0000
+    set $green #5A9A00
+    set $yellow #a68904
+    set $blue #267D95
+    set $magenta #9010cc
+    set $cyan #0c605e
+    set $white #b0b0b0
 
-## Bright
+    ## Bright
 
-set $bright_black #033333
-set $bright_red #dd0000
-set $bright_green #79CF00
-set $bright_yellow #e6a909
-set $bright_blue #31A4C4
-set $bright_magenta #b319ff
-set $bright_cyan #0e827f
-set $bright_white #d0d0d0
+    set $bright_black #033333
+    set $bright_red #dd0000
+    set $bright_green #79CF00
+    set $bright_yellow #e6a909
+    set $bright_blue #31A4C4
+    set $bright_magenta #b319ff
+    set $bright_cyan #0e827f
+    set $bright_white #d0d0d0
 
 # =============== Key Bindings ===================
 
-# switch to workspace
-bindsym $mod+0 workspace $ws_cli
-bindsym $mod+1 workspace $ws_1
-bindsym $mod+2 workspace $ws_2
-bindsym $mod+3 workspace $ws_3
-bindsym $mod+4 workspace $ws_4
-bindsym $mod+5 workspace $ws_5
-bindsym $mod+6 workspace $ws_6
-bindsym $mod+7 workspace $ws_7
-bindsym $mod+8 workspace $ws_8
-bindsym $mod+9 workspace $ws_9
-bindsym $mod+b workspace $ws_Browser
-bindsym $mod+m workspace $ws_Mail
-bindsym $mod+c workspace $ws_Com
+    # switch to workspace
+    bindsym $mod+0 workspace $ws_cli
+    bindsym $mod+c workspace $ws_code
+    bindsym $mod+b workspace $ws_Browser
+    bindsym $mod+m workspace $ws_Mail
+    bindsym $mod+d workspace $ws_document
+    bindsym $mod+1 workspace $ws_1
+    bindsym $mod+2 workspace $ws_2
+    bindsym $mod+3 workspace $ws_3
+    bindsym $mod+4 workspace $ws_4
+    bindsym $mod+5 workspace $ws_5
+    bindsym $mod+6 workspace $ws_6
+    bindsym $mod+7 workspace $ws_7
+    bindsym $mod+8 workspace $ws_8
+    bindsym $mod+9 workspace $ws_9
 
-# move focused container to workspace
-bindsym $mod+Shift+0 move container to workspace $ws_cli; workspace $ws_cli
-bindsym $mod+Shift+1 move container to workspace $ws_1; workspace $ws_1
-bindsym $mod+Shift+2 move container to workspace $ws_2; workspace $ws_2
-bindsym $mod+Shift+3 move container to workspace $ws_3; workspace $ws_3
-bindsym $mod+Shift+4 move container to workspace $ws_4; workspace $ws_4
-bindsym $mod+Shift+5 move container to workspace $ws_5; workspace $ws_5
-bindsym $mod+Shift+6 move container to workspace $ws_6; workspace $ws_6
-bindsym $mod+Shift+7 move container to workspace $ws_7; workspace $ws_7
-bindsym $mod+Shift+8 move container to workspace $ws_8; workspace $ws_8
-bindsym $mod+Shift+9 move container to workspace $ws_9; workspace $ws_9
-bindsym $mod+Shift+b move container to workspace $ws_Browser; workspace $ws_Browser
-bindsym $mod+Shift+m move container to workspace $ws_Mail; workspace $ws_Mail
-bindsym $mod+Shift+c move container to workspace $ws_Com; workspace $ws_Com
+    # move focused container to workspace
+    bindsym $mod+Shift+0 move container to workspace $ws_cli; workspace $ws_cli
+    bindsym $mod+Shift+d move container to workspace $ws_document; workspace $ws_document
+    bindsym $mod+Shift+b move container to workspace $ws_Browser; workspace $ws_Browser
+    bindsym $mod+Shift+m move container to workspace $ws_Mail; workspace $ws_Mail
+    bindsym $mod+Shift+c move container to workspace $ws_code; workspace $ws_code
+    bindsym $mod+Shift+1 move container to workspace $ws_1; workspace $ws_1
+    bindsym $mod+Shift+2 move container to workspace $ws_2; workspace $ws_2
+    bindsym $mod+Shift+3 move container to workspace $ws_3; workspace $ws_3
+    bindsym $mod+Shift+4 move container to workspace $ws_4; workspace $ws_4
+    bindsym $mod+Shift+5 move container to workspace $ws_5; workspace $ws_5
+    bindsym $mod+Shift+6 move container to workspace $ws_6; workspace $ws_6
+    bindsym $mod+Shift+7 move container to workspace $ws_7; workspace $ws_7
+    bindsym $mod+Shift+8 move container to workspace $ws_8; workspace $ws_8
+    bindsym $mod+Shift+9 move container to workspace $ws_9; workspace $ws_9
 
-# force a window on a named workspace
-assign [class="firefox"] $ws_Browser
-assign [class="Thunderbird"] $ws_Mail
-assign [class="Master PDF Editor 5"] $ws_2
-for_window [class="Foxit Reader"] move to workspace $ws_2
-for_window [class="MATLAB R2019b - academic use" title="^Fig"] move to workspace $ws_4
-for_window [class="MATLAB R2019b - academic use"] move to workspace $ws_1
-assign [class="jetbrains-studio"] $ws_1
-assign [class="jetbrains-clion"] $ws_1
-assign [class="jetbrains-idea"] $ws_1
-assign [class="Texmaker"] $ws_3
-for_window [title=".*\(Private Browsing\).*"] move to workspace $ws_9
-for_window [class="TeXstudio"] move to workspace $ws_3
-assign [class="TeXstudio"] $ws_3
-assign [class="Slack"] $ws_Com
-assign [class="VirtualBox Machine"] $ws_8
+    # force a window on a named workspace
+    assign [class="firefox"] $ws_Browser
+    for_window [title=".*\(Private Browsing\).*"] move to workspace $ws_9
+    assign [class="Thunderbird"] $ws_Mail
+    assign [class="Master PDF Editor 5"] $ws_document
+    for_window [class="Foxit Reader"] move to workspace $ws_document
+    for_window [class="MATLAB R2019b - academic use" title="^Fig"] move to workspace $ws_code
+    for_window [class="MATLAB R2019b - academic use"] move to workspace $ws_code
+    assign [class="jetbrains-studio"] $ws_code
+    assign [class="jetbrains-clion"] $ws_code
+    assign [class="jetbrains-idea"] $ws_code
+    assign [class="Texmaker"] $ws_code
+    for_window [class="TeXstudio"] move to workspace $ws_code
+    assign [class="TeXstudio"] $ws_code
 
-# move workspace between outputs
-bindsym $mod+p move workspace to output right
-bindsym $mod+Shift+p move workspace to output up
-bindsym $mod+n move workspace to output left
+    # move workspace between outputs
+    bindsym $mod+p move workspace to output right
+    bindsym $mod+Shift+p move workspace to output up
+    bindsym $mod+n move workspace to output left
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+    # Use Mouse+$mod to drag floating windows to their wanted position
+    floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+    # start a terminal
+    bindsym $mod+Return exec i3-sensible-terminal
 
-# kill focused window
-bindsym $mod+q kill
+    # kill focused window
+    bindsym $mod+q kill
 
-# start dmenu2 (a program launcher)
-bindsym $mod+d exec $dmenu
+    # start dmenu2 (a program launcher)
+    bindsym $mod+s exec $dmenu
 
-# change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+    # change focus
+    bindsym $mod+h focus left
+    bindsym $mod+j focus down
+    bindsym $mod+k focus up
+    bindsym $mod+l focus right
 
-# move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+    # move focused window
+    bindsym $mod+Shift+h move left
+    bindsym $mod+Shift+j move down
+    bindsym $mod+Shift+k move up
+    bindsym $mod+Shift+l move right
 
-# split in horizontal orientation
-bindsym $mod+Shift+v split h
+    # split in horizontal orientation
+    bindsym $mod+Shift+v split h
 
-# split in vertical orientation
-bindsym $mod+v split v
+    # split in vertical orientation
+    bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+    # enter fullscreen mode for the focused container
+    bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+t layout toggle split
+    # change container layout (stacked, tabbed, toggle split)
+    bindsym $mod+t layout toggle split
 
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+    # toggle tiling / floating
+    bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+    # change focus between tiling / floating windows
+    bindsym $mod+space focus mode_toggle
 
-# focus the last urgent window
-bindsym $mod+x [urgent=latest] focus
+    # focus the last urgent window
+    bindsym $mod+x [urgent=latest] focus
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+    # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+    bindsym $mod+Shift+r restart
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec $logoutBar
+    # exit i3 (logs you out of your X session)
+    bindsym $mod+Shift+e exec $logoutBar
 
-# lockscreen
-bindsym $mod+Escape exec $lockScreen
+    # lockscreen
+    bindsym $mod+Escape exec $lockScreen
 
-# sound
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% #volume
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+    # sound
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% #volume
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
-# Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
+    # Screen brightness controls
+    bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
+    bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
 
 # =================== Modes ======================
 
@@ -187,33 +188,35 @@ bindsym $mod+r mode "resize"
 
 # ================ Design ==================
 
-# class                 border  backgr. text    indicator child_border
-# indicator: where would the next tile apear?
-client.focused          #FF0000 #FF0000 #000000 $bright_yellow   $bright_yellow
-client.focused_inactive #FF0000 #FF0000 #FF0000 $cyan     $cyan
-client.unfocused        #FF0000 #FF0000 #FF0000 $cyan     $cyan
-client.urgent           #FF0000 #FF0000 #000000 $red      $red
-client.placeholder      #FF0000 #FF0000 #000000 #000000   $magenta
+        # class                 border  backgr. text    indicator child_border
+        # indicator: where would the next tile apear?
+        client.focused          #FF0000 #FF0000 #000000 $bright_yellow   $bright_yellow
+        client.focused_inactive #FF0000 #FF0000 #FF0000 $cyan     $cyan
+        client.unfocused        #FF0000 #FF0000 #FF0000 $cyan     $cyan
+        client.urgent           #FF0000 #FF0000 #000000 $red      $red
+        client.placeholder      #FF0000 #FF0000 #000000 #000000   $magenta
 
-client.background       #0B486B
+        client.background       #0B486B
 
-# make the titlebar disapear
-new_window 1pixel
-for_window [class=".*"] border pixel 1
+        # make the titlebar disapear
+        new_window 1pixel
+        for_window [class=".*"] border pixel 1
 
-gaps inner 5
-gaps outer 1
+        gaps inner 5
+        gaps outer 1 
 
-# Activate smart borders (always)
-smart_borders on
+        # Activate smart borders (always)
+        smart_borders on
+
 
 # ============ autostart start applications =====================
-exec --no-startup-id ~/.config/i3/fehbg # background
-exec --no-startup-id firefox
-exec --no-startup-id thunderbird
-exec --no-startup-id "/home/worldpotato/.config/i3/start-xss.sh" # for autolock
-exec --no-startup-id picom -CGb # picom with disabled shadows
-exec --no-startup-id ~/repos/dotfiles/i3/create-workspace.sh # make default workspace
-exec --no-startup-id /usr/bin/dunst # start dunst for notifications
-exec --no-startup-id nm-applet
-exec_always --no-startup-id $polybar
+    exec --no-startup-id ~/.config/i3/fehbg # background
+    exec --no-startup-id firefox
+    exec --no-startup-id thunderbird
+    exec --no-startup-id "~/.config/i3/start-xss.sh" # for autolock
+    exec --no-startup-id picom -CGb # picom with disabled shadows
+    exec --no-startup-id "~/.config/i3/create-workspace.sh" # make default workspace
+    exec --no-startup-id /usr/bin/dunst # start dunst for notifications
+    exec --no-startup-id nm-applet
+    exec_always --no-startup-id $polybar
+    exec --no-startup-id spotifyd --no-daemon &
