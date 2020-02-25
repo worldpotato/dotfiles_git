@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/home/worldpotato/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="worldpotato"
 
@@ -40,8 +40,7 @@ export PATH="$PATH:/home/worldpotato/.gem/ruby/2.6.0/bin"
 export PATH="$PATH:/home/worldpotato/go/bin"
 
 # syntax highlighting
-source ~/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
+source $HOME/repos/dotfiles/zsh/z/z.sh
 
 # added by travis gem
 [ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh
