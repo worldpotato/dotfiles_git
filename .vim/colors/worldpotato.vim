@@ -39,7 +39,7 @@ hi DiffAdd                  cterm=bold      ctermfg=Green       ctermbg=Black
 hi DiffChange               cterm=bold      ctermfg=Magenta     ctermbg=Black
 hi DiffDelete               cterm=bold      ctermfg=130         ctermbg=Black
 hi SpellBad                 cterm=bold      ctermfg=White       ctermbg=DarkRed
-hi NonText                  cterm=bold      ctermfg=Blue
+hi NonText                  cterm=bold      ctermfg=3
 
 " gitgutter
 hi SignColumn               cterm=bold      ctermbg=Black       ctermfg=Cyan
