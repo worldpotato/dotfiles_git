@@ -3,7 +3,7 @@
     filetype off                  " required
 
     " set the runtime path to include Vundle and initialize
-    set rtp+=~/repos/Vundle.vim
+    set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
     " alternatively, pass a path where Vundle should install plugins
     "call vundle#begin('~/some/path/here')
@@ -66,7 +66,7 @@
     " Always show the status line
     set laststatus=2
     let g:airline_powerline_fonts = 1
-    let g:airline_theme='airpotato'
+    let g:airline_theme='term'
 
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}
@@ -218,6 +218,13 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+" show unprintable characters
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,
+set list
+
+" better command for buffers
+command B Buffers
 
 " preview markdown
 let g:preview_markdown_vertical = 1
