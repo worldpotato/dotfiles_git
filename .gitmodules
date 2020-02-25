@@ -7,3 +7,6 @@
 [submodule ".oh-my-zsh/custom/plugins/fzf-tab"]
 	path = .oh-my-zsh/custom/plugins/fzf-tab
 	url = git@github.com:Aloxaf/fzf-tab.git
+[submodule ".oh-my-zsh/custom/plugins/z"]
+	path = .oh-my-zsh/custom/plugins/z
+	url = git@github.com:rupa/z.git
