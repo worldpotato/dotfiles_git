@@ -1,6 +1,6 @@
 #!/bin/bash
 
-i3-msg "workspace >_; append_layout ~/repos/dotfiles/i3/workspace-clean.json"
+i3-msg "workspace >_; append_layout ~/.config/i3/workspace-clean.json"
 
 termite --title=first --directory=/home/worldpotato/ &
 termite --title=gotop -e /usr/bin/gotop &
