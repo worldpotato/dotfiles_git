@@ -39,7 +39,7 @@ primary = ${colors.cyan}
 secondary = ${colors.magenta}
 
 ;alert
-alert-low = ${colors.bright_yellow}
+alert-low = ${colors.yellow}
 alert-high = ${colors.red}
 
 [bar/bar1]
