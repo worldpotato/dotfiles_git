@@ -152,20 +152,20 @@ wrapping-scroll = true
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
-
-label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
+label-mode-padding = 1
+label-mode-foreground = ${colors.background-alt}
+label-mode-background = ${colors.alert-low}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline = ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
-label-unfocused-padding = 2
+label-unfocused-underline = ${colors.primary}
+label-unfocused-padding = 1
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
@@ -175,11 +175,12 @@ label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %name%
-label-urgent-background = ${module/bspwm.label-urgent-background}
-label-urgent-padding = ${module/bspwm.label-urgent-padding}
+label-urgent-foreground = ${colors.background-alt}
+label-urgent-background = ${colors.alert-low}
+label-urgent-padding = 1
 
 ; Separator in between workspaces
-; label-separator = |
+;label-separator =
 
 
 [module/mpd]
