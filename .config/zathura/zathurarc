@@ -16,7 +16,7 @@ set highlight-active-color "#a68904"
 set highlight-color "#9010cc"
 set highlight-transparency 0.4
 
-set font "JetBrains Mono 11"
+set font "JetBrainsMono Nerd Font Mono 11"
 
 set abort-clear-search true
 
