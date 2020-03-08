@@ -2,7 +2,7 @@
 
 set $mod Mod4
 
-font JetBrains Mono
+font JetBrainsMono Nerd Font Mono
 
 # ================== Variables =================
 
@@ -24,7 +24,7 @@ font JetBrains Mono
     set $ws_9 9 priv
 
     # application
-    set $dmenu dmenu_run -dim 0.6 -dc Black -h 20 -fn "JetBrains Mono:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
+    set $dmenu dmenu_run -z -r -dim 0.6 -dc Black -h 20 -fn "JetBrainsMono\ Nerd\ Font\ Mono:pixelsize=14" -nb "Dark Slate Gray" -sb "Dark Orange" -sf Black -nf Black -p ">"
     set $logoutBar "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
     set $polybar $HOME/.config/polybar/launch.sh
     set $lockScreen "loginctl lock-session"
