@@ -7,7 +7,7 @@ cell_width_scale = 1.0
 clickable_url = true
 #dynamic_title = true
 
-font = JetBrains Mono 11
+font = JetBrainsMono Nerd Font Mono 11
 
 #font = Monospace 9
 #fullscreen = true
