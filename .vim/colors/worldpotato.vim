@@ -59,7 +59,7 @@ hi airline_tabhid           cterm=bold      ctermfg=White       ctermbg=Black
 hi airline_tabsel_right     cterm=bold      ctermfg=Yellow      ctermbg=Yellow
 hi airline_tablabel_right   cterm=bold      ctermfg=White       ctermbg=235
 hi airline_tabmod_right     cterm=bold      ctermfg=Yellow      ctermbg=Yellow
-hi StatusLine	            cterm=bold      ctermbg=235         ctermfg=White
+hi StatusLine               cterm=bold      ctermbg=235         ctermfg=White
 hi StatusLineNC	            cterm=bold      ctermbg=235         ctermfg=235
 
 " syntax highlighting
