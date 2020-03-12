@@ -16,7 +16,7 @@
     Plugin 'scrooloose/nerdcommenter' " simple commenting
     Plugin 'airblade/vim-gitgutter' " shows the left column with git changes
     Plugin 'tpope/vim-fugitive' " git commands inside vim
-    Plugin 'lervag/vimtex'
+    Plugin 'LaTeX-Box-Team/LaTeX-Box'
     Plugin 'skanehira/preview-markdown.vim' " add preview for markdown
     Plugin 'lazywei/vim-matlab' " add matlab syntax
     Plugin 'francoiscabrol/ranger.vim' " adds ranger inside vim
