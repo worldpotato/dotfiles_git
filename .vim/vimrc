@@ -192,7 +192,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-set guifont=JetBrains\ Mono
+set guifont=JetBrainsMono\ Nerd\ Font\ Mono
 
 " Highlight search results
 set hlsearch
