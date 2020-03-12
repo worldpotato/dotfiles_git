@@ -24,7 +24,7 @@
     Plugin 'vim-airline/vim-airline' " better statusbar
     Plugin 'vim-airline/vim-airline-themes' " beatuiful airline
     Plugin 'ryanoasis/vim-devicons' " icons in nerdtree and statusbar
-
+    Plugin 'ycm-core/YouCompleteMe' " tab completion
     " TODO: Learn the following plugins
     " Plugin 'tpope/vim-surround'
 
