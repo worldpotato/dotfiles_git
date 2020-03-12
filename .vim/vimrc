@@ -243,4 +243,3 @@ let g:preview_markdown_vertical = 1
 " colorscheme
 colorscheme worldpotato
 
-set foldmethod=indent
