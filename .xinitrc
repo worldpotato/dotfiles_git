@@ -33,3 +33,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 numlockx on
+
+# lock the screen after 5 min
+xset s 300
+
+# bash script to activate slock after some amount of time 
+$HOME/bin/misc/xsidle.sh slock &
+
+# run the given window manager
+exec $1
+# after exec * nothing will be executed
