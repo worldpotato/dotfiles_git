@@ -1,4 +1,4 @@
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# i3 config file (v4)
 
 set $mod Mod4
 
