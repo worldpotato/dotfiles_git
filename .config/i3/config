@@ -91,19 +91,25 @@ font fixed
     bindsym $mod+Shift+9 move container to workspace $ws_9; workspace $ws_9
 
     # force a window on a named workspace
-    assign [class="firefox"] $ws_Browser
-    for_window [title=".*\(Private Browsing\).*"] move to workspace $ws_9
-    assign [class="Thunderbird"] $ws_Mail
-    assign [class="Master PDF Editor 5"] $ws_Document
-    for_window [class="Foxit Reader"] move to workspace $ws_Document
-    for_window [class="MATLAB R2019b - academic use" title="^Fig"] move to workspace $ws_code
-    for_window [class="MATLAB R2019b - academic use"] move to workspace $ws_code
-    assign [class="jetbrains-studio"] $ws_code
-    assign [class="jetbrains-clion"] $ws_code
-    assign [class="jetbrains-idea"] $ws_code
-    assign [class="Texmaker"] $ws_code
-    for_window [class="TeXstudio"] move to workspace $ws_code
-    assign [class="TeXstudio"] $ws_code
+    assign      [class="firefox"]                                   $ws_Browser
+    for_window  [title=".*\(Private Browsing\).*"]                  move to workspace $ws_9
+
+    assign      [class="Thunderbird"]                               $ws_Mail
+    assign      [class="Master PDF Editor 5"]                       $ws_Document
+    for_window  [class="Foxit Reader"]                              move to workspace $ws_Document
+
+    for_window  [class="MATLAB R2019b - academic use" title="^Fig"] move to workspace $ws_code
+    for_window  [class="MATLAB R2019b - academic use"]              move to workspace $ws_code
+
+    assign      [class="jetbrains-studio"]                          $ws_code
+    assign      [class="jetbrains-clion"]                           $ws_code
+    assign      [class="jetbrains-idea"]                            $ws_code
+
+    assign      [class="Texmaker"]                                  $ws_code
+    for_window  [class="TeXstudio"]                                 move to workspace $ws_code
+    assign      [class="TeXstudio"]                                 $ws_code
+
+    assign      [class="Steam"]                                     $ws_game
 
     # move workspace between outputs
     bindsym $mod+p move workspace to output right
