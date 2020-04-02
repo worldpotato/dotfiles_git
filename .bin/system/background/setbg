@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-scale "$HOME/.bin/system/background/desktop_background.png" 

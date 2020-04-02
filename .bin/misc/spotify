@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pkill spotifyd
+spotifyd --no-daemon &> /dev/null &
+
+spt
