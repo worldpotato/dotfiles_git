@@ -24,10 +24,10 @@ font fixed
     set $ws_9 﫸
 
     # application
-    set $dmenu dmenu_run -z -r -dim 0.6 -dc Black -h 20 -fn "JetBrainsMono\ Nerd\ Font\ Mono:pixelsize=14" -nb "Dark Slate Gray" -sb "Dark Orange" -sf Black -nf Black -p ">"
-    set $logoutBar "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+    set $dmenu dmenu_run
+    set $logoutBar i3-msg exit
     set $polybar $HOME/.config/polybar/launch.sh
-    set $lockScreen $HOME/bin/misc/lock-screen
+    set $lockScreen $HOME/.bin/system/lock-screen
 
     # Colors
     ## Normal
