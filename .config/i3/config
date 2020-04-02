@@ -219,13 +219,5 @@ bindsym $mod+r mode "resize"
     # smart_borders on
 
 # ============ autostart start applications =====================
-    exec --no-startup-id ~/.config/i3/fehbg # background
-    exec --no-startup-id firefox
-    exec --no-startup-id thunderbird
-    exec --no-startup-id "~/.config/i3/start-xss.sh" # for autolock
-    exec --no-startup-id picom -CGb # picom with disabled shadows
     exec --no-startup-id "~/.config/i3/create-workspace.sh" # make default workspace
-    exec --no-startup-id /usr/bin/dunst # start dunst for notifications
-    exec --no-startup-id nm-applet
     exec_always --no-startup-id $polybar
-    exec --no-startup-id spotifyd --no-daemon &
