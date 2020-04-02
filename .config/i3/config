@@ -212,12 +212,11 @@ bindsym $mod+r mode "resize"
     new_window 1pixel
     for_window [class=".*"] border pixel 1
 
-        gaps inner 5
-        gaps outer 1
+    gaps inner 10
+    gaps outer -5
 
-        # Activate smart borders (always)
-        smart_borders on
-
+    # Activate smart borders (always)
+    # smart_borders on
 
 # ============ autostart start applications =====================
     exec --no-startup-id ~/.config/i3/fehbg # background
