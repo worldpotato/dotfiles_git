@@ -1,8 +1,7 @@
 # i3 config file (v4)
 
 set $mod Mod4
-
-font JetBrainsMono Nerd Font Mono
+font fixed
 
 # ================== Variables =================
 
