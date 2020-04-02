@@ -6,21 +6,22 @@ font fixed
 # ================== Variables =================
 
     # workspace name-variables
-    set $ws_Document Document
-    set $ws_Spotify Spotify
-    set $ws_Browser Browser
-    set $ws_Mail Mail
-    set $ws_cli >_
-    set $ws_code Code
-    set $ws_1 1
-    set $ws_2 2
-    set $ws_3 3
-    set $ws_4 4
-    set $ws_5 5
-    set $ws_6 6
-    set $ws_7 7
-    set $ws_8 8
-    set $ws_9 9 priv
+    set $ws_Document 
+    set $ws_Spotify 
+    set $ws_Browser 
+    set $ws_Mail 
+    set $ws_cli 
+    set $ws_code 
+    set $ws_game 
+    set $ws_1 
+    set $ws_2 
+    set $ws_3 
+    set $ws_4 
+    set $ws_5 
+    set $ws_6 
+    set $ws_7 
+    set $ws_8 
+    set $ws_9 﫸
 
     # application
     set $dmenu dmenu_run -z -r -dim 0.6 -dc Black -h 20 -fn "JetBrainsMono\ Nerd\ Font\ Mono:pixelsize=14" -nb "Dark Slate Gray" -sb "Dark Orange" -sf Black -nf Black -p ">"
@@ -60,6 +61,7 @@ font fixed
     bindsym $mod+m workspace $ws_Mail
     bindsym $mod+s workspace $ws_Spotify
     bindsym $mod+d workspace $ws_Document
+    bindsym $mod+g workspace $ws_game
     bindsym $mod+1 workspace $ws_1
     bindsym $mod+2 workspace $ws_2
     bindsym $mod+3 workspace $ws_3
@@ -77,6 +79,7 @@ font fixed
     bindsym $mod+Shift+b move container to workspace $ws_Browser; workspace $ws_Browser
     bindsym $mod+Shift+m move container to workspace $ws_Mail; workspace $ws_Mail
     bindsym $mod+Shift+c move container to workspace $ws_code; workspace $ws_code
+    bindsym $mod+Shift+g move container to workspace $ws_game; workspace $ws_game
     bindsym $mod+Shift+1 move container to workspace $ws_1; workspace $ws_1
     bindsym $mod+Shift+2 move container to workspace $ws_2; workspace $ws_2
     bindsym $mod+Shift+3 move container to workspace $ws_3; workspace $ws_3
