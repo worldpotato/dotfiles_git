@@ -11,7 +11,7 @@ ZSH_THEME="worldpotato"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync)
+plugins=(git git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync)
 
 source $ZSH/oh-my-zsh.sh
 
