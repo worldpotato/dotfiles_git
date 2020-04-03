@@ -45,6 +45,7 @@ export PATH="$PATH:/home/worldpotato/.bin/bluetooth"
 export PATH="$PATH:/home/worldpotato/.gem/ruby/2.6.0/bin"
 export PATH="$PATH:$GOPATH/bin"
 
+export EDITOR=vim
 # added by travis gem
 [ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh
 
