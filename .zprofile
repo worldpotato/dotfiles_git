@@ -1,5 +1,5 @@
 if [ -f ~/.zshrc ]; then
    source ~/.zshrc
 fi
-
-startx ~/.xinitrc /usr/bin/i3
+exec startx ~/.xinitrc /usr/bin/i3 &> ~/.xsession-errors
+xbacklight -set 0
