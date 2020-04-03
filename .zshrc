@@ -55,3 +55,15 @@ eval $(thefuck --alias)
 # export FZF
 export FZF_BASE=/usr/bin/fzf
 
+# Default values for the appearance of the prompt.
+ZSH_THEME_GIT_PROMPT_PREFIX=""
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_SEPARATOR="|"
+ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[green]%}"
+ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[yellow]%}%{%G%}"
+ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg[red]%}%{%G%}"
+ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[green]%}%{%G%}"
+ZSH_THEME_GIT_PROMPT_BEHIND="%{%G%}"
+ZSH_THEME_GIT_PROMPT_AHEAD="%{%G%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}%{%G%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
