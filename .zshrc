@@ -30,7 +30,12 @@ alias l="exa -lhgb --git --color-scale" # list, header, group, binary, all, git,
 alias ll="exa -lhgba --git --color-scale"
 alias viless="/usr/share/vim/vim81/macros/less.sh"
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias :wq=exit
+alias :q=exit
+alias corona='curl -L covid19.trackercli.com/history/germany'
 
+alias ps="ps auxf" # # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
+alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
 # PATH
 export PATH="$PATH:/home/worldpotato/Flutter/flutter/bin"
 export PATH="$PATH:/home/worldpotato/bin/display"
