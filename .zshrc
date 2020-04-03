@@ -67,3 +67,8 @@ ZSH_THEME_GIT_PROMPT_BEHIND="%{%G%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="%{%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}%{%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
+
+bindkey '^[[Z' reverse-menu-complete
+bindkey '^[[P'     delete-char        # Delete
+bindkey '^[[5~' up-line-or-history    # PageUp
+bindkey '^[[6~' down-line-or-history  # PageDown
