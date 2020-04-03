@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xbacklight -set 0
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -32,14 +33,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-numlockx on
+$HOME/.bin/system/autostart.sh &
+# this is to prevent something loading in the wrong order
+sleep 0.5
 
-# lock the screen after 5 min
-xset s 300
-
-# bash script to activate slock after some amount of time 
-$HOME/bin/misc/xsidle.sh slock &
-
+xbacklight -set 100 -time 4000 &
 # run the given window manager
 exec $1
 # after exec * nothing will be executed
