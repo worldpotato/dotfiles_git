@@ -200,13 +200,13 @@ bindsym $mod+r mode "resize"
 
     # class                 border   backgr.    text    indicator child_border
     # indicator: where would the next tile apear?
-    client.focused          $cyan    $cyan      #000000 $bright_yellow   $bright_yellow
-    client.focused_inactive $cyan    $cyan      $white  $cyan     $cyan
-    client.unfocused        #FF0000  #FF0000    #FF0000 $cyan     $cyan
-    client.urgent           #FF0000  #FF0000    #000000 $red      $red
-    client.placeholder      #FF0000  #FF0000    #000000 #000000   $magenta
+    client.focused          $cyan    $cyan      $white  $bright_yellow   $bright_yellow
+    client.focused_inactive $cyan    $cyan      $white  $cyan            $cyan
+    client.unfocused        $red     $red       $red    $cyan            $cyan
+    client.urgent           $red     $red       $white  $red             $red
+    client.placeholder      $red     $red       $white  $white           $magenta
 
-    client.background       #0B486B
+    client.background       $black
 
     # make the titlebar disapear
     new_window 1pixel
