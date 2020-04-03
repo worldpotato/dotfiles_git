@@ -37,14 +37,13 @@ alias corona='curl -L covid19.trackercli.com/history/germany'
 alias ps="ps auxf" # # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
 # PATH
-export PATH="$PATH:/home/worldpotato/Flutter/flutter/bin"
-export PATH="$PATH:/home/worldpotato/bin/display"
-export PATH="$PATH:/home/worldpotato/bin/wifi"
-export PATH="$PATH:/home/worldpotato/bin/misc"
-export PATH="$PATH:/home/worldpotato/bin/usb"
-export PATH="$PATH:/home/worldpotato/bin/bluetooth"
+export PATH="$PATH:/home/worldpotato/.bin/display"
+export PATH="$PATH:/home/worldpotato/.bin/wifi"
+export PATH="$PATH:/home/worldpotato/.bin/misc"
+export PATH="$PATH:/home/worldpotato/.bin/usb"
+export PATH="$PATH:/home/worldpotato/.bin/bluetooth"
 export PATH="$PATH:/home/worldpotato/.gem/ruby/2.6.0/bin"
-export PATH="$PATH:/home/worldpotato/go/bin"
+export PATH="$PATH:$GOPATH/bin"
 
 # added by travis gem
 [ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh
