@@ -8,7 +8,7 @@ hi clear
 
 let colors_name = "worldpotato"
 
-hi Normal guifg=White guibg=Black
+hi Normal guifg=015 guibg=000
 hi clear SpellBad
 hi clear TabLine
 hi clear TabLineSel
@@ -16,60 +16,60 @@ hi clear TabLineFill
 
 
 " Groups used in the 'highlight' and 'guicursor' options default value.
-hi ErrorMsg                 cterm=standout  ctermfg=White       ctermbg=DarkRed
+hi ErrorMsg                 cterm=standout  ctermfg=015       ctermbg=001
 hi IncSearch                cterm=reverse
 hi ModeMsg                  cterm=bold
-hi VertSplit                cterm=bold      ctermfg=Black       ctermbg=Black
-hi Visual                   cterm=reverse   ctermbg=Black
+hi VertSplit                cterm=bold      ctermfg=000       ctermbg=000
+hi Visual                   cterm=reverse   ctermbg=000
 hi VisualNOS                cterm=bold
-hi DiffText                 cterm=bold      ctermfg=DarkRed     ctermbg=Black
-hi Directory                cterm=bold      ctermfg=DarkBlue
-hi LineNr                   cterm=none      ctermfg=DarkGreen   ctermbg=Black
-hi CursorLineNr             cterm=bold      ctermfg=Green       ctermbg=Black
-hi MoreMsg                  cterm=bold      ctermfg=DarkGreen
-hi Question                 cterm=standout  ctermfg=DarkGreen
-hi Search                   cterm=none      ctermfg=8           ctermbg=Yellow
-hi SpecialKey               cterm=bold      ctermfg=DarkBlue
-hi Title                    cterm=bold      ctermfg=DarkMagenta
-hi WarningMsg               cterm=standout  ctermfg=DarkRed
-hi WildMenu                 cterm=standout  ctermbg=Yellow      ctermfg=Black
-hi Folded                   cterm=standout  ctermbg=Black       ctermfg=DarkBlue
-hi FoldColumn               cterm=standout  ctermbg=Grey        ctermfg=DarkBlue
-hi DiffAdd                  cterm=bold      ctermfg=Green       ctermbg=Black
-hi DiffChange               cterm=bold      ctermfg=Magenta     ctermbg=Black
-hi DiffDelete               cterm=bold      ctermfg=130         ctermbg=Black
-hi SpellBad                 cterm=bold      ctermfg=White       ctermbg=DarkRed
+hi DiffText                 cterm=bold      ctermfg=001     ctermbg=000
+hi Directory                cterm=bold      ctermfg=004
+hi LineNr                   cterm=none      ctermfg=002   ctermbg=000
+hi CursorLineNr             cterm=bold      ctermfg=010       ctermbg=000
+hi MoreMsg                  cterm=bold      ctermfg=002
+hi Question                 cterm=standout  ctermfg=002
+hi Search                   cterm=none      ctermfg=8           ctermbg=011
+hi SpecialKey               cterm=bold      ctermfg=004
+hi Title                    cterm=bold      ctermfg=005
+hi WarningMsg               cterm=standout  ctermfg=001
+hi WildMenu                 cterm=standout  ctermbg=011      ctermfg=000
+hi Folded                   cterm=standout  ctermbg=000       ctermfg=004
+hi FoldColumn               cterm=standout  ctermbg=Grey        ctermfg=004
+hi DiffAdd                  cterm=bold      ctermfg=010       ctermbg=000
+hi DiffChange               cterm=bold      ctermfg=005     ctermbg=000
+hi DiffDelete               cterm=bold      ctermfg=130         ctermbg=000
+hi SpellBad                 cterm=bold      ctermfg=015       ctermbg=001
 hi NonText                  cterm=bold      ctermfg=3
 
 " gitgutter
-hi SignColumn               cterm=bold      ctermbg=Black       ctermfg=Cyan
-hi GitGutterAdd             cterm=bold      ctermbg=Black       ctermfg=Green
-hi GitGutterChange          cterm=bold      ctermbg=Black       ctermfg=Brown
-hi GitGutterDelete          cterm=bold      ctermbg=Black       ctermfg=Red
-hi GitGutterChangeDelete    cterm=bold      ctermbg=Black       ctermfg=Red
+hi SignColumn               cterm=bold      ctermbg=000       ctermfg=006
+hi GitGutterAdd             cterm=bold      ctermbg=000       ctermfg=010
+hi GitGutterChange          cterm=bold      ctermbg=000       ctermfg=003
+hi GitGutterDelete          cterm=bold      ctermbg=000       ctermfg=009
+hi GitGutterChangeDelete    cterm=bold      ctermbg=000       ctermfg=009
 
 " airline
 hi airline_tab              cterm=bold      ctermfg=2           ctermbg=8
-hi airline_tabtype          cterm=bold      ctermfg=Green       ctermbg=Green
-hi airline_tablabel         cterm=bold      ctermfg=Yellow      ctermbg=Green
+hi airline_tabtype          cterm=bold      ctermfg=010       ctermbg=010
+hi airline_tablabel         cterm=bold      ctermfg=011      ctermbg=010
 hi airline_tabsel           cterm=bold      ctermfg=2           ctermbg=8
-hi airline_tabmod           cterm=bold      ctermfg=Red         ctermbg=8
-hi airline_tabfill          cterm=bold      ctermfg=White       ctermbg=235
-hi airline_tabhid           cterm=bold      ctermfg=White       ctermbg=Black
-hi airline_tabsel_right     cterm=bold      ctermfg=Yellow      ctermbg=Yellow
-hi airline_tablabel_right   cterm=bold      ctermfg=White       ctermbg=235
-hi airline_tabmod_right     cterm=bold      ctermfg=Yellow      ctermbg=Yellow
-hi StatusLine               cterm=bold      ctermbg=235         ctermfg=White
+hi airline_tabmod           cterm=bold      ctermfg=009         ctermbg=8
+hi airline_tabfill          cterm=bold      ctermfg=015       ctermbg=235
+hi airline_tabhid           cterm=bold      ctermfg=015       ctermbg=000
+hi airline_tabsel_right     cterm=bold      ctermfg=011      ctermbg=011
+hi airline_tablabel_right   cterm=bold      ctermfg=015       ctermbg=235
+hi airline_tabmod_right     cterm=bold      ctermfg=011      ctermbg=011
+hi StatusLine               cterm=bold      ctermbg=235         ctermfg=015
 hi StatusLineNC	            cterm=bold      ctermbg=235         ctermfg=235
 
 " syntax highlighting
 hi PreProc                  cterm=NONE      ctermfg=130
-hi Identifier               cterm=NONE      ctermfg=cyan
-hi Comment                  cterm=NONE      ctermfg=darkmagenta
-hi Constant                 cterm=NONE      ctermfg=green
-hi Special                  cterm=NONE      ctermfg=brown
-hi Statement                cterm=bold      ctermfg=lightblue
-hi Type	                    cterm=none      ctermfg=blue
+hi Identifier               cterm=NONE      ctermfg=006
+hi Comment                  cterm=NONE      ctermfg=005
+hi Constant                 cterm=NONE      ctermfg=010
+hi Special                  cterm=NONE      ctermfg=003
+hi Statement                cterm=bold      ctermfg=012
+hi Type	                    cterm=none      ctermfg=004
 
 " Line and column mark
 hi CursorLine               cterm=none      ctermbg=8
