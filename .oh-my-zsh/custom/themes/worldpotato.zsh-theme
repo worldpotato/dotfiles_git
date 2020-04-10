@@ -9,7 +9,7 @@ prompt_setup_worldpotato(){
   ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[226]%}🗲 %{$reset_color%}"
   ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-  base_prompt='%{$FG[073]%}%n%{$reset_color%}%{$FG[185]%}@%{$reset_color%}%{$FG[073]%}%m%{$reset_color%}%{$FG[185]%}:%{$reset_color%}%{$FG[030]%}%0~%{$reset_color%}%{$FG[185]%}|%{$reset_color%}'
+  base_prompt='%{$FG[012]$BG[008]%}  %{$FG[008]$BG[000]%} %{$FG[011]%}%0~%{$FG[000]$BG[233]%} %{$reset_color%}'
   post_prompt='%{$FG[196]%}>_ %{$reset_color%}'
 
   base_prompt_nocolor=$(echo "$base_prompt" | perl -pe "s/%\{[^}]+\}//g")
@@ -29,7 +29,7 @@ prompt_worldpotato_precmd(){
   if [[ $prompt_length -gt 40 ]]; then
     nl=$'\n%{\r%}';
   fi
-  PROMPT="$base_prompt$gitinfo$nl$post_prompt"
+  PROMPT="$base_prompt$nl$post_prompt"
 }
 
 prompt_setup_worldpotato
