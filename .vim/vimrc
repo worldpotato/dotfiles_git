@@ -1,3 +1,7 @@
+
+" color scheme
+colorscheme worldpotato
+
 ""==== Vundle Start ====
     set nocompatible              " be iMproved, required
     filetype off                  " required
@@ -11,20 +15,21 @@
     " let Vundle manage Vundle, required
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'scrooloose/syntastic'
-    Plugin 'scrooloose/nerdtree' " nerdtree on the right
     Plugin 'Xuyuanp/nerdtree-git-plugin' " shows git status in nerdtree
     Plugin 'scrooloose/nerdcommenter' " simple commenting
     Plugin 'airblade/vim-gitgutter' " shows the left column with git changes
     Plugin 'tpope/vim-fugitive' " git commands inside vim
     Plugin 'LaTeX-Box-Team/LaTeX-Box'
     Plugin 'skanehira/preview-markdown.vim' " add preview for markdown
-    Plugin 'lazywei/vim-matlab' " add matlab syntax
+    Plugin 'lazywei/vim-matlab' " add Matlab syntax
     Plugin 'francoiscabrol/ranger.vim' " adds ranger inside vim
     Plugin 'junegunn/fzf.vim' " fuzzy search for everything
-    Plugin 'vim-airline/vim-airline' " better statusbar
-    Plugin 'vim-airline/vim-airline-themes' " beatuiful airline
-    Plugin 'ryanoasis/vim-devicons' " icons in nerdtree and statusbar
+    Plugin 'vim-airline/vim-airline' " better status bar
+    Plugin 'vim-airline/vim-airline-themes' " beautiful airline
+    Plugin 'ryanoasis/vim-devicons' " icons in nerdtree and status bar
     Plugin 'ycm-core/YouCompleteMe' " tab completion
+    Plugin 'sedm0784/vim-you-autocorrect'
+    Plugin 'inkarkat/vim-ReplaceWithRegister.git'
     " TODO: Learn the following plugins
     " Plugin 'tpope/vim-surround'
 
@@ -50,7 +55,7 @@
 
     filetype plugin indent on    " required
     " To ignore plugin indent changes, instead use:
-    "filetype plugin on
+    "file type plugin on
     "
     " Brief help
     " :PluginList       - lists configured plugins
@@ -66,63 +71,39 @@
     " Always show the status line
     set laststatus=2
     let g:airline_powerline_fonts = 1
-    let g:airline_theme='term'
+    let g:airline_theme='airpotato'
 
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}
     endif
 
-    " unicode symbols
-    let g:airline_left_sep = '»'
-    let g:airline_left_sep = '▶'
-    let g:airline_right_sep = '«'
-    let g:airline_right_sep = '◀'
-    let g:airline_symbols.crypt = '🔒'
+    " Unicode symbols
+    let g:airline_left_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_symbols.crypt = ''
     let g:airline_symbols.linenr = '☰'
-    let g:airline_symbols.linenr = '␊'
-    let g:airline_symbols.linenr = '␤'
-    let g:airline_symbols.linenr = '¶'
-    let g:airline_symbols.maxlinenr = ''
-    let g:airline_symbols.maxlinenr = ' '
-    let g:airline_symbols.branch = '⎇'
-    let g:airline_symbols.paste = 'ρ'
-    let g:airline_symbols.paste = 'Þ'
+    let g:airline_symbols.maxlinenr = ''
+    let g:airline_symbols.branch = ''
     let g:airline_symbols.paste = '∥'
-    let g:airline_symbols.spell = 'Ꞩ'
+    let g:airline_symbols.spell = '暈'
     let g:airline_symbols.notexists = 'Ɇ'
     let g:airline_symbols.whitespace = 'Ξ'
 
     " airline symbols
-    let g:airline_left_sep = ''
-    let g:airline_left_alt_sep = ''
-    let g:airline_right_sep = ''
-    let g:airline_right_alt_sep = ''
-    let g:airline_symbols.branch = ''
-    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.branch = ''
+    let g:airline_symbols.readonly = ''
     let g:airline_symbols.linenr = '☰'
     let g:airline_symbols.maxlinenr = ' '
-    let g:airline_symbols.dirty='⚡'
+    let g:airline_symbols.dirty=''
 
-    " Tab bar at the top
+    " tab line
     let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#left_sep = ' '
-    let g:airline#extensions#tabline#left_alt_sep = '|'
+    let g:airline#extensions#tabline#left_sep = ''
+    let g:airline#extensions#tabline#left_alt_sep = ''
+    let g:airline#extensions#tabline#right_sep = ''
+    let g:airline#extensions#tabline#right_alt_sep = ''
+
 "==== Airline end ====
-
-"==== NerdTree Start ====
-    " close NERDTree if the only window left open is a Nerdtree
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-    " NERDTree automatic launch
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-    " autostart NERDTree
-    autocmd VimEnter * NERDTree | wincmd p
-
-    " NERDTree ignore array
-    let NERDTreeIgnore = ['\.aux$']
-"==== NerdTree End ====
 
 "==== nerdcommenter Start ====
     " Add spaces after comment delimiters by default
@@ -149,14 +130,6 @@
     " Enable NERDCommenterToggle to check all selected lines is commented or not
     let g:NERDToggleCheckAllLines = 1
 "==== nerdcommenter End ====
-
-"==== vimtex start ====
-    " vimtex
-    let g:vimtex_compiler_method='arara'
-    let g:vimtex_mappings_enabled = 1
-    let g:vimtex_view_method='zathura'
-    let g:vimtex_compiler_arara = 1
-"==== vimtex end ====
 
 "==== syntastic start =====
     set statusline+=%#warningmsg#
@@ -240,6 +213,5 @@ command B Buffers
 " preview markdown
 let g:preview_markdown_vertical = 1
 
-" colorscheme
-colorscheme worldpotato
-
+" open ranger when vim open a directory
+let g:ranger_replace_netrw = 1
