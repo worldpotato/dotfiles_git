@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:	Felix Strobel <mail@felixstrobel.de>
-" Last Change:	18.01.2020
+" Last Change:	10.04.2020
 " inspired by delek from David Schweikert <dws@ee.ethz.ch>
 
 " First remove all existing highlighting.
@@ -8,7 +8,7 @@ hi clear
 
 let colors_name = "worldpotato"
 
-hi Normal guifg=015 guibg=000
+hi Normal guifg=White guibg=Black
 hi clear SpellBad
 hi clear TabLine
 hi clear TabLineSel
