@@ -98,8 +98,8 @@ font fixed
     assign      [class="Master PDF Editor 5"]                       $ws_Document
     for_window  [class="Foxit Reader"]                              move to workspace $ws_Document
 
-    for_window  [class="MATLAB R2019b - academic use" title="^Fig"] move to workspace $ws_code
-    for_window  [class="MATLAB R2019b - academic use"]              move to workspace $ws_code
+    for_window  [class="MATLAB R2020a - academic use" title="^Fig"] move to workspace $ws_code
+    for_window  [class="MATLAB R2020a - academic use"]              move to workspace $ws_code
 
     assign      [class="jetbrains-studio"]                          $ws_code
     assign      [class="jetbrains-clion"]                           $ws_code
