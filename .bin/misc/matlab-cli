@@ -1,4 +1,4 @@
 #!/bin/bash
 # this is a helper script
 # because matlab will not start with dmenu without the -desktop option
-/usr/local/MATLAB/R2019b/bin/matlab -nojvm -nodisplay -nosplash
+/usr/local/MATLAB/R2020a/bin/matlab -nojvm -nodisplay -nosplash
