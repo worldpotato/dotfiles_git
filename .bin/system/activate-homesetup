@@ -3,4 +3,6 @@
 
 bluetoothctl power on
 
-xmodmap ~/.Xmodmap
+xmodmap $HOME/.Xmodmap
+
+~/.bin/system/setbg
