@@ -344,7 +344,7 @@ format-padding = 0
 screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
-pseudo-transparency = true
+pseudo-transparency = false
 
 [global/wm]
 margin-top = 5
