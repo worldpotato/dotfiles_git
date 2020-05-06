@@ -40,6 +40,7 @@ hi DiffChange               cterm=none      ctermfg=005       ctermbg=000
 hi DiffDelete               cterm=none      ctermfg=130       ctermbg=000
 hi SpellBad                 cterm=none      ctermfg=015       ctermbg=001
 hi NonText                  cterm=none      ctermfg=003
+hi MatchParen               cterm=none      ctermfg=000       ctermbg=014
 
 " gitgutter
 hi SignColumn               cterm=none      ctermfg=006       ctermbg=000
