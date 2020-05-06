@@ -39,13 +39,11 @@ class Default(ColorScheme):
             if context.directory:
                 attr |= bold
                 fg = blue
-                fg += BRIGHT
             elif context.executable and not \
                     any((context.media, context.container,
                          context.fifo, context.socket)):
                 attr |= bold
                 fg = green
-                fg += BRIGHT
             if context.socket:
                 attr |= bold
                 fg = magenta
@@ -80,7 +78,10 @@ class Default(ColorScheme):
                     attr |= bold
                 if context.marked:
                     attr |= bold
-                    fg = yellow
+                    #  fg = yellow
+                    bg = black
+                    bg += BRIGHT
+
             if context.badinfo:
                 if attr & reverse:
                     bg = magenta
@@ -92,7 +93,7 @@ class Default(ColorScheme):
 
         elif context.in_titlebar:
             if context.hostname:
-                fg = red if context.bad else green
+                fg = red if context.bad else yellow
             elif context.directory:
                 fg = blue
             elif context.tab:
@@ -110,8 +111,8 @@ class Default(ColorScheme):
                     fg = magenta
             if context.marked:
                 attr |= bold | reverse
-                fg = yellow
-                fg += BRIGHT
+                bg = black
+                bg += BRIGHT
             if context.frozen:
                 attr |= bold | reverse
                 fg = cyan
