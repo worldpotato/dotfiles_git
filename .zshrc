@@ -86,6 +86,7 @@ alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias :wq=exit
 alias :q=exit
 alias corona='curl -L covid19.trackercli.com/history/germany'
+alias vim='vim --servername vim'
 
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
