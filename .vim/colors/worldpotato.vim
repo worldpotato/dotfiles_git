@@ -73,8 +73,8 @@ hi Statement                cterm=none      ctermfg=012
 hi Type                     cterm=none      ctermfg=004
 
 " Line and column mark
-hi CursorLine               cterm=none                        ctermbg=008
-hi CursorColumn             cterm=none                        ctermbg=008
+hi CursorLine               cterm=none                        ctermbg=000
+hi CursorColumn             cterm=none                        ctermbg=000
 
 if exists("syntax_on")
   let syntax_cmd = "enable"
