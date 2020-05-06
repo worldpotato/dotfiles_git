@@ -20,7 +20,7 @@ hi ErrorMsg                 cterm=none      ctermfg=015       ctermbg=001
 hi IncSearch                cterm=none
 hi ModeMsg                  cterm=none
 hi VertSplit                cterm=none      ctermfg=000       ctermbg=000
-hi Visual                   cterm=none                        ctermbg=000
+hi Visual                   cterm=none      ctermfg=007       ctermbg=000
 hi VisualNOS                cterm=none
 hi DiffText                 cterm=none      ctermfg=001       ctermbg=000
 hi Directory                cterm=none      ctermfg=004
