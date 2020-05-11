@@ -90,3 +90,6 @@ alias vim='vim --servername vim'
 
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
+
+# added by travis gem
+[ ! -s /home/worldpotato/.travis/travis.sh ] || source /home/worldpotato/.travis/travis.sh
