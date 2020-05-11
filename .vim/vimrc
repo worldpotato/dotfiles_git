@@ -233,3 +233,5 @@ noremap <F5> :mksession! saved_session.vim<cr>
 noremap <F6> :source saved_session.vim<cr>
 
 set path+=**
+
+set hidden
