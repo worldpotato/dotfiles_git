@@ -11,17 +11,18 @@ let s:N3 = [ '#CAE682' , '#242424' , 7 , 233 ] " statusline
 let s:N4 = [ '#86CD74' , 10, 233 , 1 ]         " mode modified
 
 " Insert mode
-let s:I1 = [ '#141413' , '#FDE76E' , 3 , 6 ]   " mode
+let s:I1 = [ '#141413' , '#FDE76E' , 0 , 3 ]   " mode
 let s:I2 = [ '#FDE76E' , '#32322F' , 6 , 0 ]   " info
 let s:I3 = [ '#FDE76E' , '#242424' , 7 , 233 ] " statusline
 let s:I4 = [ '#FADE3E' , 11 , 233 , 1 ]        " mode modified
 
 " Visual mode
-let s:V1 = [ '#141413' , '#B5D3F3' , 7 , 6 ]   " mode
+let s:V1 = [ '#141413' , '#B5D3F3' , 0 , 5 ]   " mode
 let s:V2 = [ '#B5D3F3' , '#32322F' , 6 , 0 ]   " info
 let s:V3 = [ '#B5D3F3' , '#242424' , 7 , 233 ] " statusline
 let s:V4 = [ '#7CB0E6' , 12 , 233 , 1 ]        " mode modified
 
+"
 " Replace mode
 let s:R1 = [ '#141413' , '#E5786D' , 0 , 1 ]   " mode
 let s:R2 = [ '#E5786D' , '#32322F' , 6 , 0 ]   " info
@@ -79,13 +80,3 @@ let g:airline#themes#airpotato#palette.insert_paste = {
 let g:airline#themes#airpotato#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 let g:airline#themes#airpotato#palette.inactive_modified = {
     \ 'airline_c': [ s:N4[0] , ''      , s:N4[2] , s:N4[3]      , ''     ] }
-
-
-if !get(g:, 'loaded_ctrlp', 0)
-  finish
-endif
-let g:airline#themes#airpotato#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
-      \ [ '#DADADA' , '#242424' , 253 , 234 , ''     ] ,
-      \ [ '#DADADA' , '#40403C' , 253 , 238 , ''     ] ,
-      \ [ '#141413' , '#DADADA' , 232 , 253 , 'bold' ] )
-
