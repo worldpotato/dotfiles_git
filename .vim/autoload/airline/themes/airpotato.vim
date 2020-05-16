@@ -5,29 +5,29 @@
 
 " Normal mode
 "          [ guifg, guibg, ctermfg, ctermbg, opts ]
-let s:N1 = [ '#141413' , '#CAE682' , 233 , 6 ] " mode
-let s:N2 = [ '#CAE682' , '#32322F' , 6 , 0 ]   " info
-let s:N3 = [ '#CAE682' , '#242424' , 7 , 233 ] " statusline
-let s:N4 = [ '#86CD74' , 10, 233 , 1 ]         " mode modified
+let s:N1 = [ '#141413' , '#CAE682' , 0 , 6 ] " mode
+let s:N2 = [ '#CAE682' , '#32322F' , 14 , 8 ]   " info
+let s:N3 = [ '#CAE682' , '#242424' , 7 , 0 ] " statusline
+let s:N4 = [ '#86CD74' , 10, 0 , 12 ]         " mode modified
 
 " Insert mode
-let s:I1 = [ '#141413' , '#FDE76E' , 0 , 3 ]   " mode
-let s:I2 = [ '#FDE76E' , '#32322F' , 6 , 0 ]   " info
-let s:I3 = [ '#FDE76E' , '#242424' , 7 , 233 ] " statusline
-let s:I4 = [ '#FADE3E' , 11 , 233 , 1 ]        " mode modified
+let s:I1 = [ '#141413' , '#FDE76E' , 8 , 3 ]   " mode
+let s:I2 = [ '#FDE76E' , '#32322F' , 14 , 8 ]   " info
+let s:I3 = [ '#FDE76E' , '#242424' , 7 , 0 ] " statusline
+let s:I4 = [ '#FADE3E' , 11 , 0 ,  12 ]        " mode modified
 
 " Visual mode
-let s:V1 = [ '#141413' , '#B5D3F3' , 0 , 5 ]   " mode
-let s:V2 = [ '#B5D3F3' , '#32322F' , 6 , 0 ]   " info
-let s:V3 = [ '#B5D3F3' , '#242424' , 7 , 233 ] " statusline
-let s:V4 = [ '#7CB0E6' , 12 , 233 , 1 ]        " mode modified
+let s:V1 = [ '#141413' , '#B5D3F3' , 8 , 5 ]   " mode
+let s:V2 = [ '#B5D3F3' , '#32322F' , 14 , 8 ]   " info
+let s:V3 = [ '#B5D3F3' , '#242424' , 7 , 0 ] " statusline
+let s:V4 = [ '#7CB0E6' , 12 , 0 , 12 ]        " mode modified
 
 "
 " Replace mode
-let s:R1 = [ '#141413' , '#E5786D' , 0 , 1 ]   " mode
-let s:R2 = [ '#E5786D' , '#32322F' , 6 , 0 ]   " info
-let s:R3 = [ '#E5786D' , '#242424' , 7 , 233 ] " statusline
-let s:R4 = [ '#E55345' , 9 , 1 , 233]          " mode modified
+let s:R1 = [ '#141413' , '#E5786D' , 8 , 1 ]   " mode
+let s:R2 = [ '#E5786D' , '#32322F' , 14 , 8 ]   " info
+let s:R3 = [ '#E5786D' , '#242424' , 7 , 0 ] " statusline
+let s:R4 = [ '#E55345' , 9 , 0 , 12 ]          " mode modified  
 
 " Paste mode
 let s:PA = [ '#94E42C' , 6 ]
@@ -80,3 +80,4 @@ let g:airline#themes#airpotato#palette.insert_paste = {
 let g:airline#themes#airpotato#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 let g:airline#themes#airpotato#palette.inactive_modified = {
     \ 'airline_c': [ s:N4[0] , ''      , s:N4[2] , s:N4[3]      , ''     ] }
+
