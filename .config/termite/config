@@ -5,11 +5,8 @@ bold_is_bright = false
 cell_height_scale = 1.0
 cell_width_scale = 1.0
 clickable_url = true
-#dynamic_title = true
-
-font = JetBrainsMono Nerd Font Mono 11
-
-#font = Monospace 9
+dynamic_title = true
+font = JetBrainsMono Nerd Font 11
 #fullscreen = true
 #icon_name = terminal
 mouse_autohide = true
@@ -38,7 +35,7 @@ hyperlinks = true
 #modify_other_keys = false
 
 # set size hints for the window
-#size_hints = false
+size_hints = true
 
 # "off", "left" or "right"
 #scrollbar = off
@@ -51,57 +48,42 @@ hyperlinks = true
 
 #foreground = #dcdccc
 #foreground_bold = #ffffff
-background = #0f0f0f
+#background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+background = rgba(0, 0, 0, 0.8)
 
 # If unset, will reverse foreground and background
-#highlight = #2f2f2f
+highlight = 
 
 # Colors from color0 to color254 can be set
-#: black
 color0 = #022222
-#: red
 color1 = #aa0000
-#: green
-color2 = #5A9A00
-#: yellow
+color2 = #5a9a00
 color3 = #a68904
-#: blue
 color4 = #267D95
-#: magenta
 color5 = #9010cc
-#: cyan
 color6 = #0c605e
-#: white
 color7 = #b0b0b0
 
-# bright
-#: black
 color8 = #033333
-#: red
 color9 = #dd0000
-#: green
-color10 = #79CF00
-#: yellow
+color10 = #79cf00
 color11 = #e6a909
-#: blue
-color12 = #31A4C4
-#: magenta
+color12 = #31a4c4
 color13 = #b319ff
-#: cyan
 color14 = #0e827f
-#: white
 color15 = #d0d0d0
 
 [hints]
-#background = #0f0f0f
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
 #active_foreground = #e68080
-#active_background = #Ff0000
+#active_background = #3f3f3f
 #padding = 2
 #border = #3f3f3f
-border_width = 0.5
+#border_width = 0.5
 #roundness = 2.0
 
 # vim: ft=dosini cms=#%s
