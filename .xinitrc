@@ -1,6 +1,5 @@
 #!/bin/sh
 
-xbacklight -set 0
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -33,13 +32,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-compton -bCG --blur-method kawase --backend glx --blur-strength 12 --blur-background -i 0.9
-
+$HOME/.bin/system/xsidle.sh slock &
 $HOME/.bin/system/autostart.sh &
 # this is to prevent something loading in the wrong order
 sleep 0.5
 
-xbacklight -set 100 -time 4000 &
 # run the given window manager
 exec $1
 # after exec * nothing will be executed
