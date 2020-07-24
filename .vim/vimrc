@@ -19,6 +19,8 @@ colorscheme worldpotato
 	Plugin 'airblade/vim-gitgutter' " shows the left column with git changes
 	Plugin 'tpope/vim-fugitive' " git commands inside vim
 	Plugin 'tpope/vim-markdown'
+	Plugin 'tpope/vim-surround'
+	Plugin 'tpope/vim-obsession'
 	Plugin 'lervag/vimtex'
 	Plugin 'junegunn/fzf.vim' " fuzzy search for everything
 	Plugin 'vim-airline/vim-airline' " better status bar
@@ -29,8 +31,9 @@ colorscheme worldpotato
 	Plugin 'inkarkat/vim-ReplaceWithRegister.git'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'jremmen/vim-ripgrep'
-	Plugin 'francoiscabrol/ranger.vim'
-	Plugin 'tpope/vim-surround'
+	Plugin 'ludovicchabant/vim-gutentags.git'
+	Plugin 'vhdirk/vim-cmake'
+	" Plugin 'vim-scripts/Conque-GDB'
 
 	" The following are examples of different formats supported.
 	" Keep Plugin commands between vundle#begin/end.
@@ -213,25 +216,32 @@ set wildmenu
 " some leader commands
 nnoremap <Leader>b :Buffers<cr>
 nnoremap <Leader>f :Files<cr>
-nnoremap <Leader>r :Ranger<cr>
 
 " preview markdown
 let g:preview_markdown_vertical = 1
 
-" open ranger when vim open a directory
-let g:ranger_replace_netrw = 1
-let g:ranger_map_keys = 0
-
 " latex
 let g:tex_flavor='latex'
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_complete_close_braces = 1
+autocmd BufEnter *.tex EnableAutocorrect
+autocmd BufEnter *.tex set spell
 
-" manually save a session with <F5>
-noremap <F5> :mksession! saved_session.vim<cr>
-
-" recall the manually saved session with <F6>
-noremap <F6> :source saved_session.vim<cr>
-
+" add some sort of fuzzy completion
 set path+=**
 
 set hidden
+
+au FileType c set makeprg=gcc\ %
+au FileType cpp set makeprg=g++\ %
+au FileType c packadd termdebug
+au FileType cpp packadd termdebug
+let termdebugger = "gdb"
+let g:termdebug_wide=1
+
+" that enables ycm working with syntastics on c/cpp
+let g:ycm_show_diagnostics_ui = 0
+
+" remove weird "O" behaviour
+set ttimeout
+set ttimeoutlen=50

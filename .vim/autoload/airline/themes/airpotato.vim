@@ -8,26 +8,26 @@
 let s:N1 = [ '#141413' , '#CAE682' , 0 , 6 ] " mode
 let s:N2 = [ '#CAE682' , '#32322F' , 14 , 8 ]   " info
 let s:N3 = [ '#CAE682' , '#242424' , 7 , 0 ] " statusline
-let s:N4 = [ '#86CD74' , 10, 0 , 12 ]         " mode modified
+let s:N4 = [ '#86CD74' , 10, 0 , 14 ]         " mode modified
 
 " Insert mode
 let s:I1 = [ '#141413' , '#FDE76E' , 8 , 3 ]   " mode
 let s:I2 = [ '#FDE76E' , '#32322F' , 14 , 8 ]   " info
 let s:I3 = [ '#FDE76E' , '#242424' , 7 , 0 ] " statusline
-let s:I4 = [ '#FADE3E' , 11 , 0 ,  12 ]        " mode modified
+let s:I4 = [ '#FADE3E' , 11 , 0 ,  14 ]        " mode modified
 
 " Visual mode
 let s:V1 = [ '#141413' , '#B5D3F3' , 8 , 5 ]   " mode
 let s:V2 = [ '#B5D3F3' , '#32322F' , 14 , 8 ]   " info
 let s:V3 = [ '#B5D3F3' , '#242424' , 7 , 0 ] " statusline
-let s:V4 = [ '#7CB0E6' , 12 , 0 , 12 ]        " mode modified
+let s:V4 = [ '#7CB0E6' , 12 , 0 , 14 ]        " mode modified
 
 "
 " Replace mode
 let s:R1 = [ '#141413' , '#E5786D' , 8 , 1 ]   " mode
 let s:R2 = [ '#E5786D' , '#32322F' , 14 , 8 ]   " info
 let s:R3 = [ '#E5786D' , '#242424' , 7 , 0 ] " statusline
-let s:R4 = [ '#E55345' , 9 , 0 , 12 ]          " mode modified  
+let s:R4 = [ '#E55345' , 9 , 0 , 14 ]          " mode modified
 
 " Paste mode
 let s:PA = [ '#94E42C' , 6 ]
