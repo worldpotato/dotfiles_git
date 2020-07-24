@@ -177,8 +177,9 @@ nmap <leader>rn <Plug>(coc-rename)
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " One of the must have plugins
-Plug 'junegunn/fzf.vim' " fuzzy search for everything
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }	
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 
 
 Plug 'tibabit/vim-templates'
@@ -186,7 +187,13 @@ let g:tmpl_search_paths = ['~/.config/nvim/templates']
 let g:tmpl_author = 'Felix Strobel'
 let g:teml_email = 'mail@felixstrobel.de'
 
+
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+
+
 Plug 'airblade/vim-gitgutter' " shows the left column with git changes
 Plug 'tpope/vim-fugitive' " git commands inside vim
 Plug 'tpope/vim-surround'
@@ -196,6 +203,7 @@ Plug 'sedm0784/vim-you-autocorrect'
 Plug 'majutsushi/tagbar'
 Plug 'jremmen/vim-ripgrep'
 Plug 'raingo/vim-matlab'
+Plug 'mipmip/vim-scimark'
 Plug 'ludovicchabant/vim-gutentags'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
@@ -234,7 +242,7 @@ nnoremap <Leader>b :Buffers<cr>
 nnoremap <Leader>f :Files<cr>
 
 " escape to normal mode in terminal window
-tnoremap <Esc> <C-\><C-n>
+tnoremap <leader><Esc> <C-\><C-n>
 
 
 " color scheme
