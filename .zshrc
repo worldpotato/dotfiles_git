@@ -12,9 +12,11 @@ ZSH_THEME="worldpotato"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync)
+plugins=(git git-flow git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync zsh-vimode-visual)
 
 source $ZSH/oh-my-zsh.sh
+
+source $ZSH/custom/plugins/vi-mode/vi-mode.zsh
 
 #
 # exports for other stuff
@@ -43,7 +45,7 @@ export LANG=en_US.UTF-8
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # colors to gcc
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -86,10 +88,13 @@ alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias :wq=exit
 alias :q=exit
 alias corona='curl -L covid19.trackercli.com/history/germany'
-alias vim='vim --servername vim'
+# alias vim='vim --servername vim'
+alias vim=nvim
 
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
 
 # added by travis gem
 [ ! -s /home/worldpotato/.travis/travis.sh ] || source /home/worldpotato/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
