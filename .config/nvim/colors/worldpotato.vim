@@ -70,4 +70,26 @@ endif
 " termdebug
 hi debugPC                  cterm=bold      ctermfg=001       ctermbg=008
 hi debugBreakpoint          cterm=bold      ctermfg=007       ctermbg=001
-" vim: sw=2
+
+" tagbar
+hi TagbarComment            cterm=none      ctermfg=005
+hi TagbarKind               cterm=bold      ctermfg=006
+hi TagbarNestedKind         cterm=bold      ctermfg=006
+" hi TagbarScope
+" hi TagbarType
+hi TagbarSignature          cterm=none      ctermfg=006
+" hi TagbarPseudoID
+"     The asterisk (*) that signifies a pseudo-tag.
+" hi TagbarFoldIcon
+"     The fold icon on the left of foldable tags.
+hi TagbarHighlight          cterm=bold      ctermfg=003
+" TagbarVisibilityPublic
+"     The "public" visibility symbol.
+"
+" TagbarVisibilityProtected
+"     The "protected" visibility symbol.
+"
+" TagbarVisibilityPrivate
+"     The "private" visibility symbol.
+
+"vim: sw=2
