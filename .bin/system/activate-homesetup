@@ -1,8 +1,11 @@
 #!/bin/sh
 ~/.bin/display/display-home
 
+i3-msg restart
+
 bluetoothctl power on
 
+setxkbmap -option altwin:swap_alt_win
 xmodmap $HOME/.Xmodmap
 
 ~/.bin/system/setbg
