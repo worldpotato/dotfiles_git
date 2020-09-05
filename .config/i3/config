@@ -92,6 +92,7 @@ font fixed
 
     # force a window on a named workspace
     assign      [class="firefox"]                                   $ws_Browser
+    assign      [class="qutebrowser"]                               $ws_Browser
     for_window  [title=".*\(Private Browsing\).*"]                  move to workspace $ws_private
 
     assign      [class="Thunderbird"]                               $ws_Mail
