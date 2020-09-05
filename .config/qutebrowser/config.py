@@ -1,3 +1,16 @@
+# pass
+config.bind('pw', 'spawn --userscript qute-pass --dmenu-invocation dmenu')
+config.bind('Pw', 'spawn --userscript qute-pass --dmenu-invocation dmenu --password-only')
+
+# spellcheck
+c.spellcheck.languages = ["en-US"]
+
+# minimize fingerprint
+c.content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; rv:80.0) Gecko/20100101 Firefox/80.0"
+c.content.headers.accept_language = "en-US,en;q=0.5"
+c.content.headers.custom = {"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
+c.content.canvas_reading = False
+
 # tabs
 c.tabs.position = "left"
 c.tabs.width = "15%"
@@ -85,22 +98,22 @@ c.colors.completion.scrollbar.fg = base04
 c.colors.completion.scrollbar.bg = base00
 
 # Background color of disabled items in the context menu.
-c.colors.contextmenu.disabled.bg = base01
+c.colors.contextmenu.disabled.bg = base00
 
 # Foreground color of disabled items in the context menu.
-c.colors.contextmenu.disabled.fg = base04
+c.colors.contextmenu.disabled.fg = base07
 
 # Background color of the context menu. If set to null, the Qt default is used.
 c.colors.contextmenu.menu.bg = base00
 
 # Foreground color of the context menu. If set to null, the Qt default is used.
-c.colors.contextmenu.menu.fg =  base05
+c.colors.contextmenu.menu.fg =  base0F
 
 # Background color of the context menu’s selected item. If set to null, the Qt default is used.
-c.colors.contextmenu.selected.bg = base02
+c.colors.contextmenu.selected.bg = base08
 
 #Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
-c.colors.contextmenu.selected.fg = base05
+c.colors.contextmenu.selected.fg = base0F
 
 # Background color for the download bar.
 c.colors.downloads.bar.bg = base00
