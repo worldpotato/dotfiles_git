@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+
+xset s $(expr $1 \* 60) # calculates the seconds in minutes
