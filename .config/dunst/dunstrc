@@ -15,7 +15,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = mouse
+    follow = keyboard
 
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]
@@ -277,8 +277,8 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#022222"
-    foreground = "#267D95"
-    frame_color = "#267D95"
+    foreground = "#185AD6"
+    frame_color = "#033333"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
 #icon = /path/to/icon
@@ -286,8 +286,8 @@
 [urgency_normal]
     # green
     background = "#022222"
-    foreground = "#5A9A00"
-    frame_color = "#5A9A00"
+    foreground = "#b0b0b0"
+    frame_color = "#033333"
     timeout = 20
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
@@ -296,7 +296,7 @@
     # red
     background = "#022222"
     foreground = "#dd0000"
-    frame_color = "#dd0000"
+    frame_color = "#033333"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
