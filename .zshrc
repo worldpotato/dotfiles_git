@@ -18,6 +18,8 @@ source $ZSH/oh-my-zsh.sh
 
 source $ZSH/custom/plugins/vi-mode/vi-mode.zsh
 
+source ~/.dstask-zsh-completions.sh
+
 #
 # exports for other stuff
 #
@@ -80,6 +82,7 @@ bindkey '^[[6~' down-line-or-history  # PageDown
 
 alias vtop="vtop -t aid"
 alias tty-clock="tty-clock -sbcDC2 -f %d.%m.%Y"
+alias tty-tomato='tty-clock-tomato -sbcDC2 -f %d.%m.%Y'
 alias ip="ip -c"
 alias l="exa -lhgb --git --color-scale" # list, header, group, binary, all, git, color for size
 alias ll="exa -lhgba --git --color-scale"
@@ -90,11 +93,14 @@ alias :q=exit
 alias corona='curl -L covid19.trackercli.com/history/germany'
 # alias vim='vim --servername vim'
 alias vim=nvim
-
+alias task="dstask"
+alias todos="nvim /home/worldpotato/nextcloud/tasks/list_of_tasks.csv"
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
-
+alias screenkey="screenkey -t 1 -s small --opacity 0.5 --scr 2"
 # added by travis gem
 [ ! -s /home/worldpotato/.travis/travis.sh ] || source /home/worldpotato/.travis/travis.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+PS1='>'
