@@ -90,6 +90,15 @@ font fixed
     bindsym $mod+Shift+8 move container to workspace $ws_8
     bindsym $mod+Shift+9 move container to workspace $ws_private
 
+    # set ws to screens 
+    workspace $ws_cli output DP1 eDP1
+    workspace $ws_code output HDMI1 eDP1
+    workspace $ws_Browser output DP1 eDP1
+    workspace $ws_Mail output eDP1
+    workspace $ws_Spotify output eDP1
+    workspace $ws_Document output DP1 eDP1
+    workspace $ws_game output HDMI1 eDP1
+
     # force a window on a named workspace
     assign      [class="firefox"]                                   $ws_Browser
     assign      [class="qutebrowser"]                               $ws_Browser
