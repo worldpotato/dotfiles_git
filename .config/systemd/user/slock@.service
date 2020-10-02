@@ -5,7 +5,7 @@ Before=sleep.target
 [Service]
 User=%i
 Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/worldpotato/.lyxauth
+Environment=XAUTHORITY=/home/worldpotato/.Xauthority
 ExecStartPre=/usr/bin/xset dpms force suspend
 ExecStart=/usr/local/bin/slock
 
