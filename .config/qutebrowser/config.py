@@ -1,9 +1,19 @@
+# time until downloads get removed in ms
+c.downloads.remove_finished = -1
+
 # pass
 config.bind('pw', 'spawn --userscript qute-pass --dmenu-invocation dmenu')
 config.bind('Pw', 'spawn --userscript qute-pass --dmenu-invocation dmenu --password-only')
 
+# watch youtube with mpv
+config.bind('Xo', 'spawn mpv {url}')
+config.bind('XO', 'hint links spawn mpv {hint-url}')
+
 # spellcheck
 c.spellcheck.languages = ["en-US"]
+
+# editor command
+c.editor.command=['st','-e','nvim', "{}", "+call cursor({line}, {column})"]
 
 # minimize fingerprint
 c.content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; rv:80.0) Gecko/20100101 Firefox/80.0"
@@ -15,7 +25,7 @@ c.content.canvas_reading = False
 c.tabs.position = "left"
 c.tabs.width = "15%"
 c.tabs.favicons.scale = 1.2
-c.tabs.new_position.related = "last"
+#  c.tabs.new_position.related = "last"
 c.tabs.padding = {"bottom": 3, "left": 5, "right": 5, "top": 3}
 
 # start pages
@@ -321,3 +331,9 @@ c.colors.tabs.selected.even.fg = base00
 
 # Background color of selected even tabs.
 c.colors.tabs.selected.even.bg = base02
+
+# Enable dark mode
+c.colors.webpage.darkmode.enabled = False
+#  c.colors.webpage.darkmode.algorithm = "brightness-rgb"
+c.colors.webpage.darkmode.contrast = 0.9
+#  c.colors.webpage.darkmode.greyscale.all = True
