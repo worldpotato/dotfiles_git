@@ -68,7 +68,7 @@ if exists("syntax_on")
 endif
 
 " termdebug
-hi debugPC                  cterm=bold      ctermfg=001       ctermbg=008
+hi debugPC                  cterm=bold      ctermfg=000       ctermbg=003
 hi debugBreakpoint          cterm=bold      ctermfg=007       ctermbg=001
 
 " tagbar
