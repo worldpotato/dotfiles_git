@@ -1,0 +1,5 @@
+#!/bin/sh
+
+filename="${1%.*}"
+pandoc -f markdown -t pdf $1 -o $filename.pdf
+
