@@ -1,0 +1,12 @@
+#!/bin/sh
+
+filename=${1%.*}
+
+echo "Enter password:"
+read PASSWORD
+
+pdftops -upw $PASSWORD $1 /tmp/$filename.ps
+ps2pdf /tmp/$filename.ps ./$filename-unlock.pdf
+
+rm /tmp/$filename.ps
+
