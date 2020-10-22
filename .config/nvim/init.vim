@@ -1,3 +1,7 @@
+
+" color scheme
+colorscheme worldpotato
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
@@ -17,6 +21,7 @@ Plug 'raingo/vim-matlab'
 Plug 'mipmip/vim-scimark'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'easymotion/vim-easymotion'
+Plug 'blindFS/vim-taskwarrior'
 Plug 'm-pilia/vim-ccls'
 
 
@@ -41,40 +46,75 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
+Plug 'itchyny/lightline.vim'
+Plug 'taohexxx/lightline-buffer'
+set noshowmode
 
+set showtabline=2
+let g:lightline_buffer_enable_devicons = 1
+
+" use lightline-buffer in lightline
+let g:lightline = {
+    \ 'tabline': {
+    \   'left': [ [ 'bufferinfo' ],
+    \             [ 'separator' ],
+    \             [ 'bufferbefore', 'buffercurrent', 'bufferafter' ], ],
+    \   'right': [],
+    \ },
+    \ 'component_expand': {
+    \   'buffercurrent': 'lightline#buffer#buffercurrent',
+    \   'bufferbefore': 'lightline#buffer#bufferbefore',
+    \   'bufferafter': 'lightline#buffer#bufferafter',
+    \ },
+    \ 'component_type': {
+    \   'buffercurrent': 'tabsel',
+    \   'bufferbefore': 'raw',
+    \   'bufferafter': 'raw',
+    \ },
+    \ 'component_function': {
+    \   'bufferinfo': 'lightline#buffer#bufferinfo',
+    \ },
+    \ 'component': {
+    \   'separator': '',
+    \ },
+    \ }
+
+let g:lightline = {
+      \ 'colorscheme': 'colorpotato',
+      \ }
 " AIRLINE
-Plug 'vim-airline/vim-airline' " better status bar
-Plug 'vim-airline/vim-airline-themes' " beautiful airline
-" Always show the status line
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline_theme='airpotato'
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-" Unicode symbols
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_symbols.crypt = ''
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.spell = '暈'
-let g:airline_symbols.notexists = 'Ɇ'
-let g:airline_symbols.whitespace = 'Ξ'
-" airline symbols
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = ' '
-let g:airline_symbols.dirty=''
-" tab line
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
+" Plug 'vim-airline/vim-airline' " better status bar
+" Plug 'vim-airline/vim-airline-themes' " beautiful airline
+" " Always show the status line
+" set laststatus=2
+" let g:airline_powerline_fonts = 1
+" let g:airline_theme='airpotato'
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+" " Unicode symbols
+" let g:airline_left_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_symbols.crypt = ''
+" let g:airline_symbols.linenr = '☰'
+" let g:airline_symbols.maxlinenr = ''
+" let g:airline_symbols.branch = ''
+" let g:airline_symbols.paste = '∥'
+" let g:airline_symbols.spell = '暈'
+" let g:airline_symbols.notexists = 'Ɇ'
+" let g:airline_symbols.whitespace = 'Ξ'
+" " airline symbols
+" let g:airline_symbols.branch = ''
+" let g:airline_symbols.readonly = ''
+" let g:airline_symbols.linenr = '☰'
+" let g:airline_symbols.maxlinenr = ' '
+" let g:airline_symbols.dirty=''
+" " tab line
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ''
+" let g:airline#extensions#tabline#left_alt_sep = ''
+" let g:airline#extensions#tabline#right_sep = ''
+" let g:airline#extensions#tabline#right_alt_sep = ''
 
 
 " LATEX
@@ -195,9 +235,6 @@ fun CppSettings()
     set makeprg=g++\ %
     nnoremap <Leader>c :ClangFormat<CR> :LspCxxHighlight<CR>
 endfun
-
-" color scheme
-colorscheme worldpotato
 
 " set the line number behaviour
 set number relativenumber
