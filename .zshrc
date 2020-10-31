@@ -12,11 +12,11 @@ ZSH_THEME="worldpotato"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync zsh-vimode-visual)
+plugins=(git git-flow git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync)
 
 source $ZSH/oh-my-zsh.sh
 
-source $ZSH/custom/plugins/vi-mode/vi-mode.zsh
+# source $ZSH/custom/plugins/vi-mode/vi-mode.zsh
 
 source ~/.dstask-zsh-completions.sh
 
@@ -82,7 +82,7 @@ bindkey '^[[6~' down-line-or-history  # PageDown
 
 alias vtop="vtop -t aid"
 alias tty-clock="tty-clock -sbcDC2 -f %d.%m.%Y"
-alias tty-tomato='tty-clock-tomato -sbcDC2 -f %d.%m.%Y'
+alias tty-tomato='tty-clock-tomato -bcDC2 -f %d.%m.%Y'
 alias ip="ip -c"
 alias l="exa -lhgb --git --color-scale" # list, header, group, binary, all, git, color for size
 alias ll="exa -lhgba --git --color-scale"
@@ -91,9 +91,8 @@ alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias :wq=exit
 alias :q=exit
 alias corona='curl -L covid19.trackercli.com/history/germany'
-# alias vim='vim --servername vim'
+alias za='zathura'
 alias vim=nvim
-alias task="dstask"
 alias todos="nvim /home/worldpotato/nextcloud/tasks/list_of_tasks.csv"
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
