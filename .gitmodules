@@ -7,15 +7,9 @@
 [submodule ".oh-my-zsh/custom/plugins/z"]
 	path = .oh-my-zsh/custom/plugins/z
 	url = git@github.com:rupa/z.git
-[submodule ".vim/bundle/Vundle.vim"]
-	path = .vim/bundle/Vundle.vim
-	url = git@github.com:VundleVim/Vundle.vim.git
 [submodule "/home/worldpotato/.cfg/fzf"]
 	path = /home/worldpotato/.cfg/fzf
 	url = https://github.com/junegunn/fzf.git
 [submodule "repos/dmenu"]
 	path = repos/dmenu
 	url = git@github.com:worldpotato/potatomenu.git
-[submodule "repos/st"]
-	path = repos/st
-	url = git@github.com:worldpotato/st-potato.git
