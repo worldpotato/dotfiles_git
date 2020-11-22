@@ -141,6 +141,9 @@ font fixed
     # start dmenu2 (a program launcher)
     bindsym $mod+o exec $dmenu
 
+
+    focus_follows_mouse yes
+
     # change focus
     bindsym $mod+h focus left
     bindsym $mod+j focus down
@@ -154,10 +157,10 @@ font fixed
     bindsym $mod+Shift+l move right
 
     # split in horizontal orientation
-    bindsym $mod+Shift+v split h
+    bindsym $mod+i split h
 
     # split in vertical orientation
-    bindsym $mod+v split v
+    bindsym $mod+Shift+i split v
 
     # enter fullscreen mode for the focused container
     bindsym $mod+f fullscreen toggle
