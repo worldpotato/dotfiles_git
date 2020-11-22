@@ -1,5 +1,6 @@
 #!/bin/bash
 
+obs &
 i3-msg "workspace ; append_layout ~/.config/i3/streamWorkspaceClean.json"
 
 alacritty &
