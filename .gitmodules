@@ -11,5 +11,5 @@
 	path = /home/worldpotato/.cfg/fzf
 	url = https://github.com/junegunn/fzf.git
 [submodule "repos/dmenu"]
-	path = repos/dmenu
+	path = repos/used_programms/dmenu
 	url = git@github.com:worldpotato/potatomenu.git
