@@ -99,6 +99,7 @@ alias todos="nvim /home/worldpotato/nextcloud/tasks/list_of_tasks.csv"
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
 alias screenkey="screenkey -t 1 -s small --opacity 0.5 --scr 2"
+alias acli="arduino-cli"
 # added by travis gem
 [ ! -s /home/worldpotato/.travis/travis.sh ] || source /home/worldpotato/.travis/travis.sh
 
