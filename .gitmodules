@@ -13,3 +13,6 @@
 [submodule "repos/dmenu"]
 	path = repos/used_programms/dmenu
 	url = git@github.com:worldpotato/potatomenu.git
+[submodule "repos/used_programms/potatomenu"]
+	path = repos/used_programms/potatomenu
+	url = git@github.com:worldpotato/potatomenu.git
