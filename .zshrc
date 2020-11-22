@@ -12,7 +12,7 @@ ZSH_THEME="worldpotato"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf z gpg-agent rsync)
+plugins=(git git-flow git-prompt git-extras httpie command-not-found extract sudo colored-man-pages zsh-syntax-highlighting pass fzf gpg-agent rsync)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,6 +48,8 @@ export LANG=en_US.UTF-8
 export ARCHFLAGS="-arch x86_64"
 
 export EDITOR=nvim
+
+export GTEST_COLOR=1
 
 # colors to gcc
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -97,6 +99,7 @@ alias todos="nvim /home/worldpotato/nextcloud/tasks/list_of_tasks.csv"
 alias ps="ps auxf" # show all processes, display user-oriented format, show processes that aren't attached to ttys, use full-format listing
 alias psg="\ps aux | rg -v rg | rg -i -e VSZ -e" # search for a running process. example: psg firefox
 alias screenkey="screenkey -t 1 -s small --opacity 0.5 --scr 2"
+alias acli="arduino-cli"
 # added by travis gem
 [ ! -s /home/worldpotato/.travis/travis.sh ] || source /home/worldpotato/.travis/travis.sh
 

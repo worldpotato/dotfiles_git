@@ -18,7 +18,7 @@ c.spellcheck.languages = ["en-US"]
 c.editor.command=['st','-e','nvim', "{}", "+call cursor({line}, {column})"]
 
 # minimize fingerprint
-#  c.content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; rv:80.0) Gecko/20100101 Firefox/80.0"
+#  c.content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; rv:80.0) Gecko/20200101 Firefox/81.0"
 #  c.content.headers.accept_language = "en-US,en;q=0.5"
 #  c.content.headers.custom = {"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
 #  c.content.canvas_reading = True

@@ -71,7 +71,7 @@ annotation_length = 30
 # or not."
 [github_stream]
 service = github
-github.default_priority = M
+github.default_priority = L
 # github.add_tags = Stream
 
 # This specifies that we should pull issues from repositories belonging
@@ -96,8 +96,7 @@ github.include_repos = twitchbot
 # - 'github.username' is the github entity you want to pull
 #   issues for.  It could be you, or some other user entirely.
 github.login = worldpotato
-github.password = 6cb567830442434650238cb81ced3a2c6aacd273 # toke for only read public repos
+github.password = <your key>
 
 SERVICE.project_template = Stream
-
 

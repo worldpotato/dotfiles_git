@@ -10,10 +10,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 """""""""" Plugins without configuration
 " Plug 'sigidagi/vim-cmake-project'
-Plug 'vhdirk/vim-cmake'
+" Plug 'vhdirk/vim-cmake'
+Plug 'ilyachur/cmake4vim'
 Plug 'airblade/vim-gitgutter' " shows the left column with git changes
 Plug 'tpope/vim-fugitive' " git commands inside vim
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'ryanoasis/vim-devicons' " icons in nerdtree and status bar
 Plug 'sedm0784/vim-you-autocorrect'
@@ -114,42 +116,6 @@ let g:lightline = {
     \   'separator': '',
     \ },
     \ }
-
-
-" AIRLINE
-" Plug 'vim-airline/vim-airline' " better status bar
-" Plug 'vim-airline/vim-airline-themes' " beautiful airline
-" " Always show the status line
-" set laststatus=2
-" let g:airline_powerline_fonts = 1
-" let g:airline_theme='airpotato'
-" if !exists('g:airline_symbols')
-"     let g:airline_symbols = {}
-" endif
-" " Unicode symbols
-" let g:airline_left_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_symbols.crypt = ''
-" let g:airline_symbols.linenr = '☰'
-" let g:airline_symbols.maxlinenr = ''
-" let g:airline_symbols.branch = ''
-" let g:airline_symbols.paste = '∥'
-" let g:airline_symbols.spell = '暈'
-" let g:airline_symbols.notexists = 'Ɇ'
-" let g:airline_symbols.whitespace = 'Ξ'
-" " airline symbols
-" let g:airline_symbols.branch = ''
-" let g:airline_symbols.readonly = ''
-" let g:airline_symbols.linenr = '☰'
-" let g:airline_symbols.maxlinenr = ' '
-" let g:airline_symbols.dirty=''
-" " tab line
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#left_sep = ''
-" let g:airline#extensions#tabline#left_alt_sep = ''
-" let g:airline#extensions#tabline#right_sep = ''
-" let g:airline#extensions#tabline#right_alt_sep = ''
-
 
 " LATEX
 Plug 'lervag/vimtex'
@@ -252,10 +218,11 @@ let g:termdebug_use_prompt = 0
 
 au FileType c ks|call CSettings()|'s
 fun CSettings()
-    let g:cmake_build_type='Debug'
     packadd termdebug
     let g:termdebug_wide = 10
     let g:termdebug_use_prompt = 0
+    let g:cmake_build_type='Debug'
+    let g:cmake_usr_args="-DTESTS=ON"
     set makeprg=gcc\ %c
     nnoremap <Leader>c :ClangFormat<CR> :LspCxxHighlight<CR>
 endfun
@@ -263,9 +230,10 @@ endfun
 au FileType cpp ks|call CppSettings()|'s
 fun CppSettings()
     packadd termdebug
-    let g:termdebug_wide = 1
+    let g:termdebug_wide = 10
     let g:termdebug_use_prompt = 0
     let g:cmake_build_type='Debug'
+    let g:cmake_usr_args="-DTESTS=OFF"
     set makeprg=g++\ %
     nnoremap <Leader>c :ClangFormat<CR> :LspCxxHighlight<CR>
 endfun
