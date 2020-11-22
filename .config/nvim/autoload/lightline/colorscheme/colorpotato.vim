@@ -31,17 +31,17 @@ if lightline#colorscheme#background() ==# 'light'
 endif
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:white, s:blue ], [ s:white, s:gray ] ]
+let s:p.normal.left = [ [ s:black, s:blue ], [ s:white, s:gray ] ]
 let s:p.normal.middle = [ [ s:silver, s:black ] ]
-let s:p.normal.right = [ [ s:white, s:blue ], [ s:white, s:gray ] ]
+let s:p.normal.right = [ [ s:black, s:blue ], [ s:white, s:gray ] ]
 let s:p.normal.error = [ [ s:black, s:red ] ]
 let s:p.normal.warning = [ [ s:black, s:yellow ] ]
 let s:p.inactive.left =  [ [ s:silver, s:gray ], [ s:gray, s:black ] ]
 let s:p.inactive.middle = [ [ s:silver, s:black ] ]
 let s:p.inactive.right = [ [ s:silver, s:gray ], [ s:gray, s:black ] ]
-let s:p.insert.left = [ [ s:white, s:green ], [ s:white, s:gray ] ]
+let s:p.insert.left = [ [ s:black, s:green ], [ s:white, s:gray ] ]
 let s:p.insert.right = copy(s:p.insert.left)
-let s:p.replace.left = [ [ s:white, s:red ], [ s:white, s:gray ] ]
+let s:p.replace.left = [ [ s:black, s:red ], [ s:white, s:gray ] ]
 let s:p.replace.right = copy(s:p.replace.left)
 let s:p.visual.left = [ [ s:white, s:purple ], [ s:white, s:gray ] ]
 let s:p.visual.right = copy(s:p.visual.left)
