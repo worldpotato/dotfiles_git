@@ -40,6 +40,6 @@ $HOME/.bin/system/autostart.sh &
 # this is to prevent something loading in the wrong order
 sleep 0.5
 
-# run the given window manager
-exec $1
+# run the window manager
+exec /bin/i3 &> ~/.xsession-errors
 # after exec * nothing will be executed
