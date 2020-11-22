@@ -133,7 +133,7 @@ font fixed
     floating_modifier $mod
 
     # start a terminal
-    bindsym $mod+Return exec st
+    bindsym $mod+Return exec alacritty
 
     # kill focused window
     bindsym $mod+q kill
