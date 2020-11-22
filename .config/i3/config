@@ -13,6 +13,7 @@ font fixed
     set $ws_cli 
     set $ws_code 
     set $ws_game 
+    set $ws_record 
     set $ws_1 
     set $ws_2 
     set $ws_3 
@@ -62,6 +63,7 @@ font fixed
     bindsym $mod+s workspace $ws_Spotify
     bindsym $mod+d workspace $ws_Document
     bindsym $mod+g workspace $ws_game
+    bindsym $mod+v workspace $ws_record
     bindsym $mod+1 workspace $ws_1
     bindsym $mod+2 workspace $ws_2
     bindsym $mod+3 workspace $ws_3
@@ -80,6 +82,7 @@ font fixed
     bindsym $mod+Shift+m move container to workspace $ws_Mail
     bindsym $mod+Shift+c move container to workspace $ws_code
     bindsym $mod+Shift+g move container to workspace $ws_game
+    bindsym $mod+Shift+v move container to workspace $ws_record
     bindsym $mod+Shift+1 move container to workspace $ws_1
     bindsym $mod+Shift+2 move container to workspace $ws_2
     bindsym $mod+Shift+3 move container to workspace $ws_3
@@ -98,6 +101,7 @@ font fixed
     workspace $ws_Spotify output eDP1
     workspace $ws_Document output DP1 eDP1
     workspace $ws_game output HDMI1 eDP1
+    workspace $ws_record output eDP1
 
     # force a window on a named workspace
     assign      [class="firefox"]                                   $ws_Browser
@@ -117,6 +121,8 @@ font fixed
     assign      [class="TeXstudio"]                                 $ws_code
 
     assign      [class="Steam"]                                     $ws_game
+
+    assign      [class="obs"]                                        $ws_record
 
     # move workspace between outputs
     bindsym $mod+p move workspace to output right
