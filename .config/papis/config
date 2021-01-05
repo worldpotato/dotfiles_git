@@ -1,0 +1,17 @@
+[papers]
+dir = ~/nextcloud/library
+extra-bibtex-keys = ["tags"]
+
+[settings]
+default-library = papers
+mark-opener-format = zathura -P {mark[value]}
+
+[tui]
+status_line_style = bg:#022222 fg:#b0b0b0
+message_toolbar_style = bg:#a68904 fg:#b0b0b0
+options_list.selected_margin_style = bg:#107371 fg:#107371
+options_list.unselected_margin_style = bg:#b0b0b0
+error_toolbar_style = bg:#AA0000 fg:#022222
+editmode = vi
+move_down_key = c-j
+move_up_key = c-k
