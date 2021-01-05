@@ -117,19 +117,10 @@ let g:lightline = {
 
 " LATEX
 Plug 'lervag/vimtex'
-let g:tex_flavor='latex'
+let g:vimtex_compiler_method='tectonic'
 let g:vimtex_view_method = 'zathura'
-let g:vimtex_complete_close_braces = 1
+let g:vimtex_complete_close_braces = 0
 let g:vimtex_fold_enabled = 1
-" ks| to save the current cursor position and |'s to go back the the
-" last position
-au FileType tex ks|call LatexSettings()|'s
-fun LatexSettings()
-    DisableAutocorrect
-    set spell
-endfun
-" au FileType tex EnableAutocorrect
-" au FileType tex set spell
 
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
