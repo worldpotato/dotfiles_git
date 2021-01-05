@@ -92,4 +92,12 @@ hi TagbarHighlight          cterm=bold      ctermfg=003
 " TagbarVisibilityPrivate
 "     The "private" visibility symbol.
 
+" nvim-lsp
+hi LspDiagnosticsSignError              cterm=bold      ctermfg=000       ctermbg=001
+hi LspDiagnosticsVirtualTextError       cterm=bold      ctermfg=001
+hi LspDiagnosticsSignWarning            cterm=bold      ctermfg=000       ctermbg=003
+hi LspDiagnosticsVirtualTextWarning     cterm=bold      ctermfg=003
+hi LspDiagnosticsSignInformation        cterm=bold      ctermfg=000       ctermbg=007
+hi LspDiagnosticsVirtualTextInformation cterm=bold      ctermfg=007
+
 "vim: sw=2
