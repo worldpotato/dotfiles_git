@@ -130,33 +130,6 @@ inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 Plug 'deoplete-plugins/deoplete-clang'
 
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-" Required for operations modifying multiple buffers like rename.
-set hidden
-" also see https://github.com/autozimu/LanguageClient-neovim/wiki/ccls
-let s:ccls_settings = {
-         \ "highlight": { "lsRanges" : v:true },
-         \ }
-let s:ccls_command = ['/usr/bin/ccls', '-init=' . json_encode(s:ccls_settings)]
-let g:LanguageClient_serverCommands = {
-      \ 'c': s:ccls_command,
-      \ 'cpp': s:ccls_command,
-      \ 'objc': s:ccls_command,
-      \ }
-nn <silent> <M-j> :call LanguageClient#textDocument_definition()<cr>
-nn <silent> <C-,> :call LanguageClient#textDocument_references({'includeDeclaration': v:false})<cr>
-nn <silent> K :call LanguageClient#textDocument_hover()<cr>
-" note that if you are using Plug mapping you should not use `noremap` mappings.
-nmap <F5> <Plug>(lcn-menu)
-" Or map each action separately
-nmap <silent>K <Plug>(lcn-hover)
-nmap <silent> gd <Plug>(lcn-definition)
-nmap <silent> gr <Plug>(lcn-references)
-nmap <silent> gi <Plug>(lcn-implementation)
-nmap <silent> <F2> <Plug>(lcn-rename)
 
 " One of the must have plugins
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
