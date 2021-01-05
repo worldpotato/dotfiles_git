@@ -1,4 +1,3 @@
-
 " color scheme
 colorscheme worldpotato
 
@@ -24,7 +23,6 @@ Plug 'raingo/vim-matlab'
 Plug 'mipmip/vim-scimark'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'easymotion/vim-easymotion'
-Plug 'blindFS/vim-taskwarrior'
 Plug 'm-pilia/vim-ccls'
 
 
