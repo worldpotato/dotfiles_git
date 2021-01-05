@@ -37,9 +37,9 @@ hi DiffDelete               cterm=none      ctermfg=130       ctermbg=000
 hi SpellBad                 cterm=underline ctermfg=015       ctermbg=001
 hi NonText                  cterm=none      ctermfg=003
 hi MatchParen               cterm=none      ctermfg=000       ctermbg=014
-hi Pmenu                    cterm=none                        ctermbg=007
-hi PmenuSbar                cterm=none      ctermfg=007       ctermbg=000
-hi PmenuThumb               cterm=none      ctermfg=000       ctermbg=012
+hi Pmenu                    cterm=none      ctermfg=007       ctermbg=008
+hi PmenuThumb               cterm=none      ctermfg=006       ctermbg=000
+hi PmenuSbar                cterm=none      ctermfg=006       ctermbg=007
 
 " gitgutter
 hi SignColumn               cterm=none      ctermfg=006       ctermbg=000
