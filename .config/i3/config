@@ -221,10 +221,10 @@ bindsym $mod+r mode "resize"
     # class                 border            backgr.            text       indicator        child_border
     # indicator: where would the next tile apear?
     client.focused          $yellow           $bright_black      $white     $yellow          $bright_yellow
-    client.focused_inactive $bright_black             $cyan              $black     $cyan            $cyan
+    client.focused_inactive $bright_black     $cyan              $black     $cyan            $cyan
     client.unfocused        $cyan             $bright_black      $white     $red             $cyan
     client.urgent           $red              $red               $white     $cyan            $yellow
-    client.placeholder      $red              $red               $white     $white           $magenta
+    client.placeholder      $black            $black             $white     $white           $magenta
 
     client.background       $black
 
