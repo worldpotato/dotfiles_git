@@ -115,4 +115,3 @@ alias grbi='git rebase -i'
 alias grbo='git rebase --onto'
 alias grbs='git rebase --skip'
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
