@@ -5,6 +5,6 @@ if status --is-login
     set -gx PATH $PATH ~/.local/bin
     set -gx PATH $PATH ~/.local/src
     set -gx PATH $PATH /usr/local/MATLAB/R2021a/bin
-    set -gx MANPATH $MANPATH /usr/local/man
+    set -gx PATH $PATH ~/.local/share/gem/ruby/3.0.0/bin
     set -gx EDITOR /usr/bin/nvim
 end
