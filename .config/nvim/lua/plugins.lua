@@ -18,7 +18,21 @@ require("packer").startup(function()
   use({ "neovim/nvim-lspconfig" })
 
   -- completion
-  use({ "hrsh7th/nvim-compe" })
+  -- use({ "hrsh7th/nvim-cmp",
+  --   requires = {
+  --     "hrsh7th/cmp-nvim-lsp",
+  --   }
+  -- })
+  use({
+    "ms-jpq/coq_nvim", branch = "coq",
+    requires = {
+      'ms-jpq/coq.artifacts', branch = "artifacts",
+      'ms-jpq/coq.thirdparty', branch = "3p"
+    }
+  })
+
+  -- snippets
+  use({"L3MON4D3/LuaSnip"})
 
   -- treesitter
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
@@ -69,6 +83,8 @@ require("packer").startup(function()
     "theHamsta/nvim-dap-virtual-text",
     requires = { "mfussenegger/nvim-dap", "nvim-treesitter/nvim-treesitter" },
   })
+
+  use({ 'mfussenegger/nvim-dap-python' })
 
   -- cmake
   use({ "ilyachur/cmake4vim" })
@@ -136,4 +152,12 @@ require("packer").startup(function()
     "nvim-telescope/telescope.nvim",
     requires = { { "nvim-lua/plenary.nvim" } },
   })
+
+  -- Testrunner
+  use { 
+    "rcarriga/vim-ultest",
+    requires = {"vim-test/vim-test"},
+    run = ":UpdateRemotePlugins"
+  }
+
 end)
