@@ -10,5 +10,10 @@ if status --is-interactive
     abbr --add --global gbl 'git blame -b -w'
     abbr --add --global gc 'git commit -v'
     abbr --add --global p 'pass -c'
+    abbr --add --global btest 'bazel test ... --test_output=all --test_arg="--gtest_color=true"'
+    abbr --add --global bbuild 'bazel build ...'
+    abbr --add --global ... 'cd ../..'
+    abbr --add --global .... 'cd ../../..'
+    abbr --add --global ..... 'cd ../../../..'
 end
 

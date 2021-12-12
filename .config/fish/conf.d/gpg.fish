@@ -6,3 +6,6 @@ set -x GPG_TTY (tty)
 
 gpgconf --launch gpg-agent
 
+echo "UPDATESTARTUPTTY" | gpg-connect-agent > /dev/null 2>&1
+
+
