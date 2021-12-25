@@ -137,7 +137,7 @@ hi { group = "Comment",                              gui=none,          guifg=wp
 hi { group = "Constant",                             gui=none,          guifg=wp02}
 hi { group = "Special",                              gui=none,          guifg=wp14}
 hi { group = "Statement",                            gui=none,          guifg=wp12}
-hi { group = "Type",                                 gui=none,          guifg=wp04}
+hi { group = "Type",                                 gui=none,          guifg=wp12}
 --
 --  Line and column mark
 hi { group = "CursorLine",                           gui=none,                         guibg = wp00}
