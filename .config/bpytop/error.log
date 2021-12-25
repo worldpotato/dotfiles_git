@@ -1,0 +1,534 @@
+29/01/21 (00:18:59) | INFO: Loglevel set to DEBUG
+29/01/21 (00:19:00) | INFO: Loglevel set to INFO
+29/01/21 (00:19:02) | INFO: Loglevel set to INFO
+29/01/21 (00:19:03) | INFO: Loglevel set to DEBUG
+29/01/21 (00:19:03) | INFO: Loglevel set to INFO
+29/01/21 (00:27:24) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:25) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:25) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:26) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:27:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (00:32:56) | INFO: Exiting. Runtime 0:19:15 
+
+29/01/21 (00:32:58) | INFO: New instance of bpytop version 1.0.61 started with pid 8990
+29/01/21 (00:32:58) | INFO: Loglevel set to INFO
+29/01/21 (00:34:09) | ERROR: Incorrectly formatted hexadecimal rgb string: #6a200
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 1119, in __init__
+    raise ValueError(f'Incorrectly formatted hexadecimal rgb string: {self.hexa}')
+ValueError: Incorrectly formatted hexadecimal rgb string: #6a200
+29/01/21 (00:34:57) | INFO: Exiting. Runtime 0:01:59 
+
+29/01/21 (00:34:58) | INFO: New instance of bpytop version 1.0.61 started with pid 9424
+29/01/21 (00:34:58) | INFO: Loglevel set to INFO
+29/01/21 (00:35:45) | INFO: Exiting. Runtime 0:00:47 
+
+29/01/21 (00:35:47) | INFO: New instance of bpytop version 1.0.61 started with pid 9613
+29/01/21 (00:35:47) | INFO: Loglevel set to INFO
+29/01/21 (00:35:47) | ERROR: RGB dec should be "0-255 0-255 0-255"
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 1126, in __init__
+    raise ValueError(f'RGB dec should be "0-255 0-255 0-255"')
+ValueError: RGB dec should be "0-255 0-255 0-255"
+29/01/21 (00:35:47) | ERROR: RGB dec should be "0-255 0-255 0-255"
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 1126, in __init__
+    raise ValueError(f'RGB dec should be "0-255 0-255 0-255"')
+ValueError: RGB dec should be "0-255 0-255 0-255"
+29/01/21 (00:35:47) | ERROR: RGB dec should be "0-255 0-255 0-255"
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 1126, in __init__
+    raise ValueError(f'RGB dec should be "0-255 0-255 0-255"')
+ValueError: RGB dec should be "0-255 0-255 0-255"
+29/01/21 (00:35:49) | ERROR: 'Color' object has no attribute 'dec'
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5477, in main
+    THEME = Theme(CONFIG.color_theme)
+  File "/usr/bin/bpytop", line 1247, in __init__
+    self._load_theme(theme)
+  File "/usr/bin/bpytop", line 1293, in _load_theme
+    rgb = { "start" : getattr(self, f'{name}_start').dec, "mid" : getattr(self, f'{name}_mid').dec, "end" : getattr(self, f'{name}_end').dec }
+AttributeError: 'Color' object has no attribute 'dec'
+29/01/21 (00:35:49) | WARNING: Exiting with errorcode (1). Runtime 0:00:02 
+
+29/01/21 (00:36:01) | INFO: New instance of bpytop version 1.0.61 started with pid 9671
+29/01/21 (00:36:01) | INFO: Loglevel set to INFO
+29/01/21 (00:37:21) | INFO: Exiting. Runtime 0:01:20 
+
+29/01/21 (00:37:22) | INFO: New instance of bpytop version 1.0.61 started with pid 9966
+29/01/21 (00:37:22) | INFO: Loglevel set to INFO
+29/01/21 (00:38:09) | INFO: Exiting. Runtime 0:00:46 
+
+29/01/21 (00:38:10) | INFO: New instance of bpytop version 1.0.61 started with pid 10143
+29/01/21 (00:38:10) | INFO: Loglevel set to INFO
+29/01/21 (00:40:53) | INFO: Exiting. Runtime 0:02:44 
+
+29/01/21 (00:40:54) | INFO: New instance of bpytop version 1.0.61 started with pid 10755
+29/01/21 (00:40:54) | INFO: Loglevel set to INFO
+29/01/21 (00:42:59) | INFO: Exiting. Runtime 0:02:05 
+
+29/01/21 (00:43:00) | INFO: New instance of bpytop version 1.0.61 started with pid 11207
+29/01/21 (00:43:00) | INFO: Loglevel set to INFO
+29/01/21 (00:44:18) | INFO: Exiting. Runtime 0:01:17 
+
+29/01/21 (00:44:19) | INFO: New instance of bpytop version 1.0.61 started with pid 11492
+29/01/21 (00:44:19) | INFO: Loglevel set to INFO
+29/01/21 (00:45:19) | INFO: Exiting. Runtime 0:01:00 
+
+29/01/21 (00:45:20) | INFO: New instance of bpytop version 1.0.61 started with pid 11723
+29/01/21 (00:45:20) | INFO: Loglevel set to INFO
+29/01/21 (00:49:09) | INFO: Exiting. Runtime 0:03:49 
+
+29/01/21 (00:49:10) | INFO: New instance of bpytop version 1.0.61 started with pid 12345
+29/01/21 (00:49:10) | INFO: Loglevel set to INFO
+29/01/21 (00:49:50) | INFO: Exiting. Runtime 0:00:40 
+
+29/01/21 (00:49:51) | INFO: New instance of bpytop version 1.0.61 started with pid 12465
+29/01/21 (00:49:51) | INFO: Loglevel set to INFO
+29/01/21 (00:52:03) | INFO: Exiting. Runtime 0:02:12 
+
+29/01/21 (00:52:04) | INFO: New instance of bpytop version 1.0.61 started with pid 12794
+29/01/21 (00:52:04) | INFO: Loglevel set to INFO
+29/01/21 (00:52:23) | INFO: Exiting. Runtime 0:00:19 
+
+29/01/21 (00:52:24) | INFO: New instance of bpytop version 1.0.61 started with pid 12859
+29/01/21 (00:52:24) | INFO: Loglevel set to INFO
+29/01/21 (00:52:54) | INFO: Exiting. Runtime 0:00:30 
+
+29/01/21 (00:52:55) | INFO: New instance of bpytop version 1.0.61 started with pid 12950
+29/01/21 (00:52:55) | INFO: Loglevel set to INFO
+29/01/21 (00:54:42) | INFO: Exiting. Runtime 0:01:46 
+
+29/01/21 (00:54:43) | INFO: New instance of bpytop version 1.0.61 started with pid 13213
+29/01/21 (00:54:43) | INFO: Loglevel set to INFO
+29/01/21 (00:55:59) | INFO: Exiting. Runtime 0:01:17 
+
+29/01/21 (00:56:00) | INFO: New instance of bpytop version 1.0.61 started with pid 13406
+29/01/21 (00:56:00) | INFO: Loglevel set to INFO
+29/01/21 (00:56:53) | INFO: Exiting. Runtime 0:00:53 
+
+29/01/21 (00:56:54) | INFO: New instance of bpytop version 1.0.61 started with pid 13555
+29/01/21 (00:56:54) | INFO: Loglevel set to INFO
+29/01/21 (00:58:40) | INFO: Exiting. Runtime 0:01:46 
+
+29/01/21 (00:58:41) | INFO: New instance of bpytop version 1.0.61 started with pid 13808
+29/01/21 (00:58:41) | INFO: Loglevel set to INFO
+29/01/21 (00:59:23) | INFO: Exiting. Runtime 0:00:42 
+
+29/01/21 (00:59:24) | INFO: New instance of bpytop version 1.0.61 started with pid 13925
+29/01/21 (00:59:24) | INFO: Loglevel set to INFO
+29/01/21 (01:02:22) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (01:02:22) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (01:02:24) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+29/01/21 (01:02:54) | INFO: Exiting. Runtime 0:03:30 
+
+29/01/21 (01:02:55) | INFO: New instance of bpytop version 1.0.61 started with pid 14426
+29/01/21 (01:02:55) | INFO: Loglevel set to INFO
+29/01/21 (01:36:13) | INFO: Exiting. Runtime 0:33:17 
+
+29/01/21 (01:36:14) | INFO: New instance of bpytop version 1.0.61 started with pid 22795
+29/01/21 (01:36:14) | INFO: Loglevel set to INFO
+29/01/21 (01:36:50) | INFO: Exiting. Runtime 0:00:36 
+
+29/01/21 (01:36:51) | INFO: New instance of bpytop version 1.0.61 started with pid 22893
+29/01/21 (01:36:51) | INFO: Loglevel set to INFO
+29/01/21 (01:37:36) | INFO: Exiting. Runtime 0:00:45 
+
+29/01/21 (01:37:37) | INFO: New instance of bpytop version 1.0.61 started with pid 23021
+29/01/21 (01:37:37) | INFO: Loglevel set to INFO
+29/01/21 (22:42:50) | INFO: New instance of bpytop version 1.0.61 started with pid 140058
+29/01/21 (22:42:50) | INFO: Loglevel set to INFO
+30/01/21 (15:34:34) | INFO: New instance of bpytop version 1.0.61 started with pid 176261
+30/01/21 (15:34:34) | INFO: Loglevel set to INFO
+30/01/21 (15:34:46) | INFO: Exiting. Runtime 1 day, 13:57:09 
+
+02/02/21 (11:18:02) | INFO: New instance of bpytop version 1.0.61 started with pid 4182
+02/02/21 (11:18:02) | INFO: Loglevel set to INFO
+04/02/21 (14:37:04) | INFO: New instance of bpytop version 1.0.61 started with pid 419605
+04/02/21 (14:37:04) | INFO: Loglevel set to INFO
+04/02/21 (14:37:36) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+04/02/21 (22:36:51) | INFO: New instance of bpytop version 1.0.61 started with pid 488707
+04/02/21 (22:36:51) | INFO: Loglevel set to INFO
+04/02/21 (22:36:55) | INFO: Exiting. Runtime 0:00:04 
+
+08/02/21 (17:28:21) | INFO: New instance of bpytop version 1.0.61 started with pid 13779
+08/02/21 (17:28:21) | INFO: Loglevel set to INFO
+08/02/21 (22:02:44) | INFO: New instance of bpytop version 1.0.61 started with pid 22588
+08/02/21 (22:02:44) | INFO: Loglevel set to INFO
+08/02/21 (22:05:28) | INFO: Exiting. Runtime 4:37:08 
+
+08/02/21 (22:05:30) | INFO: Exiting. Runtime 0:02:45 
+
+11/02/21 (14:39:56) | INFO: New instance of bpytop version 1.0.61 started with pid 179774
+11/02/21 (14:39:56) | INFO: Loglevel set to INFO
+16/02/21 (10:41:27) | INFO: New instance of bpytop version 1.0.61 started with pid 176707
+16/02/21 (10:41:27) | INFO: Loglevel set to INFO
+07/03/21 (22:01:42) | INFO: New instance of bpytop version 1.0.61 started with pid 1246792
+07/03/21 (22:01:42) | INFO: Loglevel set to INFO
+07/03/21 (22:02:04) | INFO: Exiting. Runtime 0:00:22 
+
+07/03/21 (22:02:33) | INFO: New instance of bpytop version 1.0.61 started with pid 1246983
+07/03/21 (22:02:33) | INFO: Loglevel set to INFO
+07/03/21 (22:02:44) | INFO: Exiting. Runtime 0:00:11 
+
+16/03/21 (15:46:24) | INFO: New instance of bpytop version 1.0.63 started with pid 372918
+16/03/21 (15:46:24) | INFO: Loglevel set to INFO
+16/03/21 (15:46:24) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+18/03/21 (15:17:09) | INFO: New instance of bpytop version 1.0.63 started with pid 504990
+18/03/21 (15:17:09) | INFO: Loglevel set to INFO
+18/03/21 (15:17:09) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+18/03/21 (15:17:32) | INFO: Exiting. Runtime 0:00:23 
+
+18/03/21 (21:48:32) | INFO: New instance of bpytop version 1.0.63 started with pid 540350
+18/03/21 (21:48:32) | INFO: Loglevel set to INFO
+19/03/21 (14:15:05) | INFO: Exiting. Runtime 16:26:33 
+
+21/03/21 (11:53:15) | INFO: New instance of bpytop version 1.0.63 started with pid 714073
+21/03/21 (11:53:15) | INFO: Loglevel set to INFO
+22/03/21 (09:04:05) | INFO: New instance of bpytop version 1.0.63 started with pid 210818
+22/03/21 (09:04:05) | INFO: Loglevel set to INFO
+25/03/21 (23:59:49) | INFO: New instance of bpytop version 1.0.63 started with pid 469117
+25/03/21 (23:59:49) | INFO: Loglevel set to INFO
+26/03/21 (19:17:09) | INFO: Exiting. Runtime 4 days, 10:13:04 
+
+26/03/21 (19:20:25) | INFO: New instance of bpytop version 1.0.63 started with pid 737390
+26/03/21 (19:20:25) | INFO: Loglevel set to INFO
+26/03/21 (19:33:37) | INFO: Exiting. Runtime 0:13:12 
+
+26/03/21 (19:34:03) | INFO: New instance of bpytop version 1.0.63 started with pid 739493
+26/03/21 (19:34:03) | INFO: Loglevel set to INFO
+26/03/21 (21:59:18) | INFO: Exiting. Runtime 2:25:16 
+
+26/03/21 (22:19:17) | INFO: New instance of bpytop version 1.0.63 started with pid 760137
+26/03/21 (22:19:17) | INFO: Loglevel set to INFO
+29/03/21 (19:37:27) | INFO: New instance of bpytop version 1.0.63 started with pid 3403268
+29/03/21 (19:37:27) | INFO: Loglevel set to INFO
+29/03/21 (20:00:26) | INFO: New instance of bpytop version 1.0.63 started with pid 6851
+29/03/21 (20:00:26) | INFO: Loglevel set to INFO
+09/04/21 (13:13:27) | INFO: New instance of bpytop version 1.0.63 started with pid 134077
+09/04/21 (13:13:27) | INFO: Loglevel set to INFO
+09/04/21 (19:19:05) | INFO: Exiting. Runtime 6:05:38 
+
+12/04/21 (10:32:37) | INFO: New instance of bpytop version 1.0.63 started with pid 92716
+12/04/21 (10:32:37) | INFO: Loglevel set to INFO
+14/04/21 (17:44:19) | INFO: New instance of bpytop version 1.0.63 started with pid 65077
+14/04/21 (17:44:19) | INFO: Loglevel set to INFO
+17/04/21 (15:11:57) | INFO: New instance of bpytop version 1.0.63 started with pid 174262
+17/04/21 (15:11:57) | INFO: Loglevel set to INFO
+20/04/21 (09:20:49) | INFO: New instance of bpytop version 1.0.63 started with pid 781231
+20/04/21 (09:20:49) | INFO: Loglevel set to INFO
+25/04/21 (21:28:32) | INFO: New instance of bpytop version 1.0.63 started with pid 1982805
+25/04/21 (21:28:32) | INFO: Loglevel set to INFO
+25/04/21 (21:28:50) | INFO: Exiting. Runtime 0:00:18 
+
+25/04/21 (21:29:09) | INFO: New instance of bpytop version 1.0.63 started with pid 1983187
+25/04/21 (21:29:09) | INFO: Loglevel set to INFO
+25/04/21 (21:35:56) | INFO: Exiting. Runtime 5 days, 12:15:07 
+
+26/04/21 (00:49:43) | INFO: Exiting. Runtime 3:20:34 
+
+26/04/21 (00:52:18) | INFO: New instance of bpytop version 1.0.64 started with pid 2122491
+26/04/21 (00:52:18) | INFO: Loglevel set to INFO
+26/04/21 (00:52:18) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+26/04/21 (01:05:15) | INFO: New instance of bpytop version 1.0.64 started with pid 2126163
+26/04/21 (01:05:15) | INFO: Loglevel set to INFO
+26/04/21 (01:05:15) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+26/04/21 (01:05:41) | INFO: Exiting. Runtime 0:00:26 
+
+26/04/21 (01:06:08) | INFO: New instance of bpytop version 1.0.64 started with pid 2127752
+26/04/21 (01:06:08) | INFO: Loglevel set to INFO
+26/04/21 (01:06:23) | INFO: Exiting. Runtime 0:00:15 
+
+26/04/21 (01:06:36) | INFO: New instance of bpytop version 1.0.64 started with pid 2128013
+26/04/21 (01:06:36) | INFO: Loglevel set to INFO
+26/04/21 (01:06:45) | INFO: Exiting. Runtime 0:00:09 
+
+26/04/21 (01:07:19) | INFO: New instance of bpytop version 1.0.64 started with pid 2129644
+26/04/21 (01:07:19) | INFO: Loglevel set to INFO
+26/04/21 (01:10:08) | INFO: Exiting. Runtime 0:02:50 
+
+26/04/21 (01:10:33) | INFO: New instance of bpytop version 1.0.64 started with pid 2131586
+26/04/21 (01:10:33) | INFO: Loglevel set to INFO
+26/04/21 (01:11:23) | INFO: Exiting. Runtime 0:00:50 
+
+26/04/21 (01:12:34) | INFO: New instance of bpytop version 1.0.64 started with pid 2132731
+26/04/21 (01:12:34) | INFO: Loglevel set to INFO
+27/04/21 (21:05:09) | INFO: New instance of bpytop version 1.0.64 started with pid 70774
+27/04/21 (21:05:09) | INFO: Loglevel set to INFO
+28/04/21 (21:27:10) | INFO: Exiting. Runtime 1 day, 0:22:02 
+
+28/04/21 (21:27:26) | INFO: New instance of bpytop version 1.0.64 started with pid 116917
+28/04/21 (21:27:26) | INFO: Loglevel set to INFO
+29/04/21 (16:29:20) | INFO: New instance of bpytop version 1.0.64 started with pid 21059
+29/04/21 (16:29:20) | INFO: Loglevel set to INFO
+02/05/21 (13:36:26) | INFO: New instance of bpytop version 1.0.64 started with pid 79200
+02/05/21 (13:36:26) | INFO: Loglevel set to INFO
+03/05/21 (23:20:16) | INFO: New instance of bpytop version 1.0.64 started with pid 16359
+03/05/21 (23:20:16) | INFO: Loglevel set to INFO
+08/05/21 (22:25:56) | INFO: New instance of bpytop version 1.0.64 started with pid 79509
+08/05/21 (22:25:56) | INFO: Loglevel set to INFO
+10/05/21 (13:03:43) | INFO: New instance of bpytop version 1.0.64 started with pid 135207
+10/05/21 (13:03:43) | INFO: Loglevel set to INFO
+11/05/21 (14:09:33) | INFO: New instance of bpytop version 1.0.64 started with pid 6036
+11/05/21 (14:09:33) | INFO: Loglevel set to INFO
+18/05/21 (23:19:14) | INFO: New instance of bpytop version 1.0.65 started with pid 173777
+18/05/21 (23:19:14) | INFO: Loglevel set to INFO
+18/05/21 (23:19:14) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+18/05/21 (23:19:57) | INFO: Exiting. Runtime 0:00:43 
+
+18/05/21 (23:29:42) | INFO: New instance of bpytop version 1.0.65 started with pid 175642
+18/05/21 (23:29:42) | INFO: Loglevel set to INFO
+18/05/21 (23:30:52) | INFO: Exiting. Runtime 0:01:10 
+
+20/05/21 (11:07:07) | INFO: New instance of bpytop version 1.0.65 started with pid 38204
+20/05/21 (11:07:07) | INFO: Loglevel set to INFO
+20/05/21 (11:11:20) | INFO: New instance of bpytop version 1.0.65 started with pid 41154
+20/05/21 (11:11:20) | INFO: Loglevel set to INFO
+20/05/21 (11:12:33) | INFO: New instance of bpytop version 1.0.65 started with pid 42018
+20/05/21 (11:12:33) | INFO: Loglevel set to INFO
+20/05/21 (11:14:27) | INFO: New instance of bpytop version 1.0.65 started with pid 42506
+20/05/21 (11:14:27) | INFO: Loglevel set to INFO
+20/05/21 (11:14:41) | INFO: Exiting. Runtime 0:00:14 
+
+20/05/21 (12:00:04) | INFO: New instance of bpytop version 1.0.65 started with pid 47081
+20/05/21 (12:00:04) | INFO: Loglevel set to INFO
+20/05/21 (16:06:18) | INFO: New instance of bpytop version 1.0.65 started with pid 63168
+20/05/21 (16:06:18) | INFO: Loglevel set to INFO
+21/05/21 (15:56:10) | INFO: New instance of bpytop version 1.0.65 started with pid 919812
+21/05/21 (15:56:10) | INFO: Loglevel set to INFO
+25/05/21 (00:16:04) | INFO: Exiting. Runtime 3 days, 8:19:54 
+
+25/05/21 (00:16:14) | INFO: New instance of bpytop version 1.0.65 started with pid 1039984
+25/05/21 (00:16:14) | INFO: Loglevel set to INFO
+26/05/21 (10:14:45) | INFO: Exiting. Runtime 1 day, 9:58:31 
+
+18/06/21 (10:46:21) | INFO: New instance of bpytop version 1.0.67 started with pid 578949
+18/06/21 (10:46:21) | INFO: Loglevel set to INFO
+18/06/21 (10:46:21) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+21/06/21 (21:58:27) | INFO: New instance of bpytop version 1.0.67 started with pid 113961
+21/06/21 (21:58:27) | INFO: Loglevel set to INFO
+21/06/21 (21:58:27) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+26/06/21 (20:48:03) | INFO: New instance of bpytop version 1.0.67 started with pid 1147488
+26/06/21 (20:48:03) | INFO: Loglevel set to INFO
+26/06/21 (20:48:03) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+28/06/21 (17:25:05) | INFO: New instance of bpytop version 1.0.67 started with pid 20382
+28/06/21 (17:25:05) | INFO: Loglevel set to INFO
+28/06/21 (17:25:05) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+23/07/21 (12:50:24) | INFO: New instance of bpytop version 1.0.67 started with pid 4917
+23/07/21 (12:50:24) | INFO: Loglevel set to INFO
+23/07/21 (12:50:24) | INFO: Config file version and bpytop version missmatch, will be recreated on exit!
+23/07/21 (12:58:58) | INFO: Exiting. Runtime 0:08:34 
+
+23/07/21 (14:22:40) | INFO: New instance of bpytop version 1.0.67 started with pid 5856
+23/07/21 (14:22:40) | INFO: Loglevel set to INFO
+23/07/21 (14:26:24) | INFO: New instance of bpytop version 1.0.67 started with pid 6655
+23/07/21 (14:26:24) | INFO: Loglevel set to INFO
+23/07/21 (14:28:46) | INFO: Loglevel set to DEBUG
+23/07/21 (14:30:41) | INFO: New instance of bpytop version 1.0.67 started with pid 6956
+23/07/21 (14:30:41) | INFO: Loglevel set to INFO
+23/07/21 (14:30:53) | INFO: Exiting. Runtime 0:00:12 
+
+23/07/21 (14:30:55) | INFO: New instance of bpytop version 1.0.67 started with pid 6984
+23/07/21 (14:30:55) | INFO: Loglevel set to INFO
+23/07/21 (14:31:00) | INFO: Exiting. Runtime 0:00:05 
+
+23/07/21 (14:31:25) | INFO: New instance of bpytop version 1.0.67 started with pid 7090
+23/07/21 (14:31:25) | INFO: Loglevel set to INFO
+23/07/21 (14:31:50) | INFO: New instance of bpytop version 1.0.67 started with pid 7169
+23/07/21 (14:31:50) | INFO: Loglevel set to INFO
+23/07/21 (14:31:58) | INFO: Exiting. Runtime 0:00:08 
+
+23/07/21 (14:32:07) | INFO: New instance of bpytop version 1.0.67 started with pid 7263
+23/07/21 (14:32:07) | INFO: Loglevel set to INFO
+23/07/21 (14:32:24) | INFO: New instance of bpytop version 1.0.67 started with pid 7342
+23/07/21 (14:32:24) | INFO: Loglevel set to INFO
+23/07/21 (14:32:56) | INFO: New instance of bpytop version 1.0.67 started with pid 7483
+23/07/21 (14:32:56) | INFO: Loglevel set to INFO
+23/07/21 (14:33:38) | INFO: New instance of bpytop version 1.0.67 started with pid 7583
+23/07/21 (14:33:38) | INFO: Loglevel set to INFO
+23/07/21 (14:34:53) | INFO: New instance of bpytop version 1.0.67 started with pid 7730
+23/07/21 (14:34:53) | INFO: Loglevel set to INFO
+23/07/21 (14:37:06) | INFO: New instance of bpytop version 1.0.67 started with pid 8052
+23/07/21 (14:37:06) | INFO: Loglevel set to INFO
+23/07/21 (14:37:32) | INFO: Exiting. Runtime 0:00:26 
+
+23/07/21 (14:37:39) | INFO: New instance of bpytop version 1.0.67 started with pid 8156
+23/07/21 (14:37:39) | INFO: Loglevel set to INFO
+23/07/21 (14:37:47) | INFO: Exiting. Runtime 0:00:08 
+
+23/07/21 (14:37:59) | INFO: New instance of bpytop version 1.0.67 started with pid 8258
+23/07/21 (14:37:59) | INFO: Loglevel set to INFO
+23/07/21 (14:38:29) | INFO: New instance of bpytop version 1.0.67 started with pid 8433
+23/07/21 (14:38:29) | INFO: Loglevel set to INFO
+23/07/21 (14:38:36) | INFO: Exiting. Runtime 0:00:07 
+
+23/07/21 (14:39:03) | INFO: New instance of bpytop version 1.0.67 started with pid 8645
+23/07/21 (14:39:03) | INFO: Loglevel set to INFO
+23/07/21 (14:40:34) | INFO: Exiting. Runtime 0:01:32 
+
+23/07/21 (14:42:03) | INFO: New instance of bpytop version 1.0.67 started with pid 9105
+23/07/21 (14:42:03) | INFO: Loglevel set to INFO
+25/07/21 (19:04:51) | INFO: New instance of bpytop version 1.0.67 started with pid 96148
+25/07/21 (19:04:51) | INFO: Loglevel set to INFO
+26/07/21 (16:43:49) | INFO: New instance of bpytop version 1.0.67 started with pid 45836
+26/07/21 (16:43:49) | INFO: Loglevel set to INFO
+30/07/21 (19:59:37) | INFO: New instance of bpytop version 1.0.67 started with pid 4108
+30/07/21 (19:59:37) | INFO: Loglevel set to INFO
+30/07/21 (19:59:38) | ERROR: <urlopen error [Errno -3] Temporary failure in name resolution>
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/urllib/request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/lib/python3.9/http/client.py", line 1257, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1303, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/usr/lib/python3.9/http/client.py", line 1419, in connect
+    super().connect()
+  File "/usr/lib/python3.9/http/client.py", line 923, in connect
+    self.sock = self._create_connection(
+  File "/usr/lib/python3.9/socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5009, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/lib/python3.9/urllib/request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+05/08/21 (10:54:37) | INFO: New instance of bpytop version 1.0.67 started with pid 26896
+05/08/21 (10:54:37) | INFO: Loglevel set to INFO
+05/08/21 (11:09:34) | INFO: Exiting. Runtime 0:14:57 
+
+15/08/21 (19:25:59) | INFO: New instance of bpytop version 1.0.67 started with pid 169825
+15/08/21 (19:25:59) | INFO: Loglevel set to INFO
+15/08/21 (19:29:28) | INFO: Exiting. Runtime 0:03:29 
+
+23/08/21 (23:41:25) | INFO: New instance of bpytop version 1.0.67 started with pid 331280
+23/08/21 (23:41:25) | INFO: Loglevel set to INFO
+23/08/21 (23:41:31) | INFO: Exiting. Runtime 0:00:06 
+
+02/09/21 (20:36:07) | INFO: New instance of bpytop version 1.0.67 started with pid 32807
+02/09/21 (20:36:07) | INFO: Loglevel set to INFO
+02/09/21 (20:38:06) | INFO: Exiting. Runtime 0:01:58 
+
+04/09/21 (22:03:32) | INFO: New instance of bpytop version 1.0.67 started with pid 231481
+04/09/21 (22:03:32) | INFO: Loglevel set to INFO
+05/09/21 (02:04:10) | INFO: New instance of bpytop version 1.0.67 started with pid 303637
+05/09/21 (02:04:10) | INFO: Loglevel set to INFO
+05/09/21 (02:04:26) | INFO: Exiting. Runtime 0:00:16 
+
+05/09/21 (02:04:47) | INFO: New instance of bpytop version 1.0.67 started with pid 303671
+05/09/21 (02:04:47) | INFO: Loglevel set to INFO
+05/09/21 (02:54:11) | INFO: Exiting. Runtime 0:49:23 
+
+09/09/21 (18:54:14) | INFO: New instance of bpytop version 1.0.67 started with pid 596933
+09/09/21 (18:54:14) | INFO: Loglevel set to INFO
+10/09/21 (16:16:12) | INFO: New instance of bpytop version 1.0.67 started with pid 372604
+10/09/21 (16:16:12) | INFO: Loglevel set to INFO
+10/09/21 (23:41:36) | ERROR: Input thread failed with exception: (5, 'Input/output error')
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 985, in _get_key
+    input_key = ""
+  File "/usr/bin/bpytop", line 778, in __exit__
+    termios.tcsetattr(self.stream, termios.TCSANOW, self.original_stty)
+termios.error: (5, 'Input/output error')
+14/09/21 (13:13:50) | INFO: New instance of bpytop version 1.0.67 started with pid 892624
+14/09/21 (13:13:50) | INFO: Loglevel set to INFO
+15/09/21 (18:19:28) | INFO: New instance of bpytop version 1.0.67 started with pid 187830
+15/09/21 (18:19:28) | INFO: Loglevel set to INFO
+18/09/21 (20:55:32) | INFO: New instance of bpytop version 1.0.67 started with pid 604495
+18/09/21 (20:55:32) | INFO: Loglevel set to INFO
+18/09/21 (21:13:16) | INFO: Exiting. Runtime 0:17:44 
+
+19/09/21 (22:39:58) | INFO: Exiting. Runtime 4 days, 4:20:30 
+
+19/09/21 (23:30:53) | INFO: New instance of bpytop version 1.0.67 started with pid 688582
+19/09/21 (23:30:53) | INFO: Loglevel set to INFO
+29/09/21 (13:39:06) | INFO: New instance of bpytop version 1.0.67 started with pid 66724
+29/09/21 (13:39:06) | INFO: Loglevel set to INFO
+29/09/21 (13:39:33) | INFO: Exiting. Runtime 0:00:26 
+
+01/10/21 (14:38:09) | INFO: New instance of bpytop version 1.0.67 started with pid 223704
+01/10/21 (14:38:09) | INFO: Loglevel set to INFO
+01/10/21 (14:42:10) | INFO: Exiting. Runtime 0:04:00 
+
+01/10/21 (14:42:11) | INFO: New instance of bpytop version 1.0.67 started with pid 224830
+01/10/21 (14:42:11) | INFO: Loglevel set to INFO
+01/10/21 (14:55:59) | INFO: Exiting. Runtime 0:13:48 
+
+07/10/21 (17:12:30) | INFO: New instance of bpytop version 1.0.67 started with pid 1348777
+07/10/21 (17:12:30) | INFO: Loglevel set to INFO
+08/10/21 (16:43:01) | INFO: Exiting. Runtime 23:30:30 
+
+08/10/21 (17:24:56) | INFO: New instance of bpytop version 1.0.67 started with pid 2780444
+08/10/21 (17:24:56) | INFO: Loglevel set to INFO
+08/10/21 (17:45:23) | INFO: Exiting. Runtime 0:20:27 
+
+08/10/21 (20:12:25) | INFO: New instance of bpytop version 1.0.67 started with pid 2983482
+08/10/21 (20:12:25) | INFO: Loglevel set to INFO
+09/10/21 (00:03:18) | INFO: Exiting. Runtime 3:50:53 
+
+10/10/21 (22:52:06) | INFO: New instance of bpytop version 1.0.67 started with pid 1446262
+10/10/21 (22:52:06) | INFO: Loglevel set to INFO
+12/10/21 (13:55:48) | INFO: Exiting. Runtime 1 day, 15:03:42 
+
+13/10/21 (19:32:17) | INFO: New instance of bpytop version 1.0.67 started with pid 2692413
+13/10/21 (19:32:17) | INFO: Loglevel set to INFO
+13/10/21 (19:41:21) | INFO: Exiting. Runtime 0:09:04 
+
+22/10/21 (22:58:24) | INFO: New instance of bpytop version 1.0.67 started with pid 215131
+22/10/21 (22:58:24) | INFO: Loglevel set to INFO
+31/10/21 (20:13:37) | INFO: New instance of bpytop version 1.0.67 started with pid 155560
+31/10/21 (20:13:37) | INFO: Loglevel set to INFO
+07/11/21 (18:31:03) | INFO: New instance of bpytop version 1.0.67 started with pid 2896893
+07/11/21 (18:31:03) | INFO: Loglevel set to INFO
+09/11/21 (21:49:48) | INFO: Exiting. Runtime 2 days, 3:18:46 
+
+19/11/21 (21:26:33) | INFO: New instance of bpytop version 1.0.67 started with pid 178222
+19/11/21 (21:26:33) | INFO: Loglevel set to INFO
+19/11/21 (21:28:56) | INFO: Exiting. Runtime 0:02:23 
+
+19/11/21 (21:38:16) | INFO: New instance of bpytop version 1.0.67 started with pid 193754
+19/11/21 (21:38:16) | INFO: Loglevel set to INFO
+19/11/21 (22:37:05) | INFO: New instance of bpytop version 1.0.67 started with pid 65475
+19/11/21 (22:37:05) | INFO: Loglevel set to INFO
+19/11/21 (22:37:12) | INFO: Exiting. Runtime 0:00:07 
+
+12/12/21 (13:22:56) | INFO: New instance of bpytop version 1.0.67 started with pid 1702313
+12/12/21 (13:22:56) | INFO: Loglevel set to INFO
+18/12/21 (12:37:21) | INFO: New instance of bpytop version 1.0.67 started with pid 8420
+18/12/21 (12:37:21) | INFO: Loglevel set to INFO
+18/12/21 (13:14:34) | INFO: Exiting. Runtime 0:37:13 
+
+23/12/21 (00:35:59) | INFO: New instance of bpytop version 1.0.67 started with pid 125317
+23/12/21 (00:35:59) | INFO: Loglevel set to INFO
+23/12/21 (11:01:54) | INFO: Exiting. Runtime 10:25:55 
+
+25/12/21 (17:38:26) | INFO: New instance of bpytop version 1.0.67 started with pid 6057
+25/12/21 (17:38:26) | INFO: Loglevel set to INFO
+25/12/21 (21:45:08) | INFO: Exiting. Runtime 4:06:42 
+
