@@ -94,17 +94,18 @@ font fixed
     bindsym $mod+Shift+9 move container to workspace $ws_private
 
     # set ws to screens 
-    workspace $ws_cli output DP-3
-    workspace $ws_code output HDMI-0
-    workspace $ws_Browser output HDMI-0
+    workspace $ws_cli output HDMI-0
+    workspace $ws_code output DP-0
+    workspace $ws_Browser output DP-0
     workspace $ws_Mail output DP-3
     workspace $ws_Spotify output DP-3
-    workspace $ws_Document output DP-1
-    workspace $ws_game output HDMI-0
-    workspace $ws_record output DP-3
+    workspace $ws_Document output DP-3
+    workspace $ws_game output DP-0
+    workspace $ws_record output HDMI-0
 
     # force a window on a named workspace
     assign      [class="firefox"]                                   $ws_Browser
+    assign      [class="matplotlib"]                                $ws_code
     for_window  [title=".*\(Private Browsing\).*"]                  move to workspace $ws_private
 
     assign      [class="Thunderbird"]                               $ws_Mail
@@ -220,10 +221,10 @@ bindsym $mod+r mode "resize"
 
     # class                 border            backgr.            text       indicator        child_border
     # indicator: where would the next tile apear?
-    client.focused          $yellow           $bright_black      $white     $yellow          $bright_yellow
-    client.focused_inactive $bright_black     $cyan              $black     $cyan            $cyan
-    client.unfocused        $cyan             $bright_black      $white     $red             $cyan
-    client.urgent           $red              $red               $white     $cyan            $yellow
+    client.focused          $yellow           $bright_black      $yellow    $yellow          $yellow
+    client.focused_inactive $yellow           $bright_black      $yellow    $cyan            $cyan
+    client.unfocused        $cyan             $black             $white     $cyan             $cyan
+    client.urgent           $red              $red               $white     $red            $red
     client.placeholder      $black            $black             $white     $white           $magenta
 
     client.background       $black
